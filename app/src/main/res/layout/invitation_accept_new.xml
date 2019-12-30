@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+    <android.support.constraint.ConstraintLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blue"
+            tools:context=".ui.home.HomeActivity">
+        <android.support.design.widget.AppBarLayout
+                android:id="@+id/appBarLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/new_background"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="16dp"
+                        android:src="@mipmap/ic_launcher"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+
+                        android:text="@string/add_new_birthday_party"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_title_regular"/>
+
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/padding_3"
+                        android:tint="@color/white"
+                        app:srcCompat="@drawable/ic_more_vert_black_24dp" android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+        </android.support.design.widget.AppBarLayout>
+
+
+        <ImageView
+                android:id="@+id/imageView2" android:visibility="gone"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/ic_shipping"/>
+
+
+        <LinearLayout
+                android:background="@drawable/new_background"
+                app:layout_constraintTop_toBottomOf="@id/appBarLayout2"
+                android:layout_width="match_parent" android:layout_height="0dp"
+                android:orientation="vertical">
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/join_me_to_my_birthday_party"
+                    android:textSize="20dp"
+                    android:padding="20dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+            />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:text=""
+                      android:hint="@string/please_enter_name"
+                      android:textSize="15dp"
+                      android:id="@+id/childName"
+                      android:padding="5dp"
+                      android:textStyle="bold"
+                      android:textFontWeight="900"
+                      android:layout_marginLeft="20dp"
+                      android:layout_marginRight="20dp"
+                      android:background="@color/white"
+                      android:textAlignment="center"
+
+            />
+            <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:paddingLeft="100dp"
+                    android:paddingRight="100dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="200dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:src="@drawable/event_image"
+                    android:scaleType="centerCrop"
+            />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:text="@string/here_users_can_write_the_name_of_his_child_and_after_the_name_of_the_guest"
+                      android:padding="5dp"
+                      android:textColor="@color/grey_300"
+                      android:layout_marginLeft="20dp"
+                      android:layout_marginRight="20dp"
+                      android:textAlignment="center"
+
+            />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:text="@string/allow_the_guest_to_see_the_responses"
+                      android:padding="5dp"
+                      android:textSize="14dp"
+                      android:textStyle="bold"
+                      android:layout_marginLeft="20dp"
+                      android:layout_marginRight="20dp"
+                      android:textAlignment="center"
+
+            />
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:orientation="horizontal" android:padding="20dp"
+            >
+                <TextView android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/yes_no"
+                          android:layout_gravity="left" android:textStyle="bold"
+                          android:textAlignment="center"
+                          android:gravity=""
+
+                />
+                <Space
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"/>
+
+                <com.suke.widget.SwitchButton
+                        app:sb_checked_color="#331EB5"
+                        app:sb_uncheckcircle_color="#331EB5"
+                        app:sb_show_indicator="false"
+                        android:layoutDirection="rtl"
+                        android:layout_gravity="right"
+                        android:id="@+id/switch_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_margin="10dp"
+                    android:background="#2F000000"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:hint="@string/name_of_the_guest"
+                      android:textSize="15dp"
+                      android:padding="5dp"
+                      android:textStyle="bold"
+                      android:textFontWeight="900"
+                      android:layout_marginLeft="20dp"
+                      android:layout_marginRight="20dp"
+                      android:background="@color/white"
+                      android:textAlignment="center"
+
+            />
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:text="@string/party_theme"
+                      android:textSize="25dp"
+                      android:padding="5dp"
+                      android:textStyle="bold"
+                      android:textColor="@color/white"
+                      android:textFontWeight="900"
+                      android:layout_marginLeft="20dp"
+                      android:layout_marginRight="20dp"
+                      android:textAlignment="center"
+            />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:text="@string/please_indicate_if_there_is_a_special_theme_for_the_party"
+                      android:textSize="15dp"
+                      android:padding="5dp"
+                      android:textColor="@color/white"
+                      android:textFontWeight="900"
+                      android:layout_marginLeft="20dp"
+                      android:layout_marginRight="20dp"
+                      android:textAlignment="center"
+            />
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:orientation="horizontal" android:padding="20dp"
+            >
+                <TextView android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/yes_no"
+                          android:layout_gravity="left" android:textStyle="bold"
+                          android:textAlignment="center"
+                          android:gravity=""
+
+                />
+                <Space
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"/>
+
+                <com.suke.widget.SwitchButton
+                        app:sb_checked_color="#331EB5"
+                        app:sb_uncheckcircle_color="#331EB5"
+                        app:sb_show_indicator="false"
+                        android:layout_gravity="right"
+                        android:id="@+id/switch_button1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_margin="10dp"
+                    android:background="#2F000000"/>
+            <com.jaredrummler.materialspinner.MaterialSpinner
+                    android:background="@color/white"
+                    android:layout_margin="10dp"
+                    app:ms_hint="false"
+                    android:id="@+id/spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:text="@string/date"
+                      android:textSize="25dp"
+                      android:padding="5dp"
+                      android:textStyle="bold"
+                      android:textColor="@color/white"
+                      android:textFontWeight="900"
+                      android:layout_marginLeft="20dp"
+                      android:layout_marginRight="20dp"
+                      android:textAlignment="center"
+            />
+            <com.jaredrummler.materialspinner.MaterialSpinner
+                    android:background="@color/white"
+                    android:layout_margin="10dp"
+                    android:id="@+id/spinner1"
+                    app:ms_hint="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:text="@string/time_start"
+                      android:textSize="25dp"
+                      android:padding="5dp"
+                      android:textStyle="bold"
+                      android:textColor="@color/white"
+                      android:textFontWeight="900"
+                      android:layout_marginLeft="20dp"
+                      android:layout_marginRight="20dp"
+                      android:textAlignment="center"
+            />
+            <com.jaredrummler.materialspinner.MaterialSpinner
+                    android:background="@color/white"
+                    android:layout_margin="10dp"
+                    android:id="@+id/spinner3"
+                    app:ms_hint="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:text="@string/time_end"
+                      android:textSize="25dp"
+                      android:padding="5dp"
+                      android:textStyle="bold"
+                      android:textColor="@color/white"
+                      android:textFontWeight="900"
+                      android:layout_marginLeft="20dp"
+                      android:layout_marginRight="20dp"
+                      android:textAlignment="center"
+            />
+            <com.jaredrummler.materialspinner.MaterialSpinner
+                    android:background="@color/white"
+                    android:layout_margin="10dp"
+                    android:id="@+id/spinner2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:text="@string/venue"
+                      android:textSize="25dp"
+                      android:padding="5dp"
+                      android:textStyle="bold"
+                      android:textColor="@color/white"
+                      android:textFontWeight="900"
+                      android:layout_marginLeft="20dp"
+                      android:layout_marginRight="20dp"
+                      android:textAlignment="center"
+            />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:text="@string/indicate_all_the_informations_regarding_the_bithday_party_of_your_child_and_send_the_invitation_n_it_doesn_t_prevent_you_to_give_a_funny_invitation_card_to_the_kids"
+                      android:padding="5dp"
+                      android:textColor="@color/grey_300"
+                      android:layout_marginLeft="20dp"
+                      android:layout_marginRight="20dp"
+                      android:textAlignment="center"
+            />
+            <ImageView android:layout_width="match_parent" android:layout_height="100dp"
+                       android:src="@drawable/map"
+                       android:scaleType="centerCrop"
+                       android:padding="10dp"
+                       android:layout_margin="10dp"
+                       android:layout_gravity="center"
+                       android:gravity="center"
+                       android:background="@drawable/rimg"
+                       android:id="@+id/maplogo"
+
+            />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:text="@string/street_addresse"
+                      android:textSize="23dp"
+                      android:padding="5dp"
+                      android:textStyle="bold"
+                      android:textFontWeight="1000"
+                      android:layout_marginLeft="20dp"
+                      android:layout_marginRight="20dp"
+                      android:background="@color/white"
+                      android:textAlignment="center"
+                      android:layout_marginBottom="10dp"
+            />
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:text="@string/zip_code_and_city"
+                      android:textSize="23dp"
+                      android:padding="5dp"
+                      android:textStyle="bold"
+                      android:textFontWeight="1000"
+                      android:layout_marginLeft="20dp"
+                      android:layout_marginRight="20dp"
+                      android:background="@color/white"
+                      android:textAlignment="center"
+                      android:layout_marginBottom="10dp"
+            />
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+
+                          android:orientation="horizontal"
+                          android:layout_marginBottom="10dp"
+                          android:weightSum="2"
+            >
+
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:text="@string/city_name"
+                          android:layout_weight="1"
+                          android:textSize="23dp"
+                          android:padding="5dp"
+                          android:textStyle="bold"
+
+                          android:textFontWeight="1000"
+                          android:layout_marginLeft="20dp"
+                          android:layout_marginRight="20dp"
+                          android:background="@color/white"
+                          android:textAlignment="center"
+                />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:text="@string/district"
+                          android:textSize="23dp"
+                          android:padding="5dp"
+                          android:layout_weight="1"
+                          android:textStyle="bold"
+                          android:textFontWeight="1000"
+                          android:layout_marginLeft="20dp"
+                          android:layout_marginRight="20dp"
+                          android:background="@color/white"
+                          android:textAlignment="center"
+                />
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+            >
+
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:text="@string/zip_code"
+                          android:layout_weight="1"
+                          android:textSize="23dp"
+                          android:padding="5dp"
+                          android:textStyle="bold"
+
+                          android:textFontWeight="1000"
+                          android:layout_marginLeft="20dp"
+                          android:layout_marginRight="20dp"
+                          android:background="@color/white"
+                          android:textAlignment="center"
+                />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:text="@string/country"
+                          android:textSize="23dp"
+                          android:padding="5dp"
+                          android:layout_weight="1"
+                          android:textStyle="bold"
+                          android:textFontWeight="1000"
+                          android:layout_marginLeft="20dp"
+                          android:layout_marginRight="20dp"
+                          android:background="@color/white"
+                          android:textAlignment="center"
+                />
+            </LinearLayout>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:text="@string/add_here_all_the_infomation_n_required_such_as_ndrop_pin_code"
+                      android:textSize="23dp"
+                      android:padding="5dp"
+                      android:textStyle="bold"
+                      android:textFontWeight="1000"
+                      android:layout_marginLeft="20dp"
+                      android:layout_marginRight="20dp"
+                      android:background="@color/white"
+                      android:textAlignment="center"
+                      android:layout_marginBottom="10dp"
+            />
+            <Button
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="#331EB5"
+                    android:shadowColor="#331EB5"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/white_edit_text"
+                    android:textAllCaps="false"
+                    android:text="@string/create"
+            />
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

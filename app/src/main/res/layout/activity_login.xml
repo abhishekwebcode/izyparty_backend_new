@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+    <android.support.constraint.ConstraintLayout
+            android:id="@+id/rootView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".ui.auth.LoginActivity">
+
+        <ImageView
+                android:id="@+id/background"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/cake"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+        <android.support.constraint.Guideline
+                android:id="@+id/guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="@dimen/verticalGuideline"/>
+
+        <android.support.constraint.Guideline
+                android:id="@+id/guideline2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_end="@dimen/verticalGuideline"/>
+
+        <TextView
+                android:id="@+id/textView30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/pacifico"
+                android:text="IzyParty"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_heading_big"
+                app:layout_constraintBottom_toBottomOf="@+id/background"
+                app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toTopOf="@+id/background"
+                app:layout_constraintVertical_bias="0.07"/>
+
+        <TextView
+                android:id="@+id/textView28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/pacifico"
+                android:text="@string/plan_share_invite"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_heading_regular"
+                app:layout_constraintEnd_toEndOf="@+id/textView30"
+                app:layout_constraintStart_toStartOf="@+id/textView30"
+                app:layout_constraintTop_toBottomOf="@+id/textView30"/>
+
+        <TextView android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:textStyle="bold"
+                  android:text="@string/interntaional_warning"
+                  android:textColor="@color/colorPrimaryDark"
+                  android:id="@+id/number_warning"
+                  android:visibility="invisible"
+                  android:layout_marginStart="@dimen/margin_2"
+                  android:layout_marginEnd="@dimen/margin_2"
+                  app:layout_constraintStart_toStartOf="@+id/guideline"
+                  app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                  app:layout_constraintBottom_toTopOf="@id/email"
+                  app:layout_constraintEnd_toEndOf="@+id/email"
+                  android:paddingLeft="10dp"
+                  android:paddingRight="10dp"
+                   />
+
+        <EditText android:imeOptions="actionDone"
+                android:id="@+id/email"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_2"
+                android:layout_marginEnd="@dimen/margin_2"
+                android:background="@drawable/edit_text_blur"
+                android:drawableStart="@drawable/ic_phone_android_black_24dp"
+                android:drawablePadding="@dimen/padding_2"
+                android:hint="06XXX..."
+                android:inputType="phone"
+                android:padding="@dimen/padding_2"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/textView28"
+                app:layout_constraintVertical_bias="0.15" android:drawableLeft="@drawable/ic_mail_outline_black_24dp"/>
+
+        <EditText android:imeOptions="actionDone"
+                android:id="@+id/password1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_2"
+                android:background="@drawable/edit_text_blur"
+                android:drawableStart="@drawable/ic_lock_outline_black_24dp"
+                android:drawablePadding="@dimen/padding_2"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:padding="@dimen/padding_2"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                app:layout_constraintEnd_toEndOf="@+id/email"
+                app:layout_constraintStart_toStartOf="@+id/email"
+                app:layout_constraintTop_toBottomOf="@+id/email"
+                android:drawableLeft="@drawable/ic_lock_outline_black_24dp"/>
+
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/forgot_password"
+                android:textSize="@dimen/text_body_regular"
+                android:textStyle="bold"
+                android:onClick="forgotPassword"
+                  android:gravity="end"
+                android:textAlignment="textEnd"
+                android:textColor="@color/black"
+                  android:id="@id/password"
+                  app:layout_constraintEnd_toEndOf="@+id/password1"
+                  app:layout_constraintStart_toStartOf="@+id/password1"
+                  app:layout_constraintTop_toBottomOf="@+id/password1"
+        />
+
+        <TextView
+                android:id="@+id/textView5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/button_outline"
+                android:gravity="center"
+                android:padding="@dimen/padding_2"
+                android:text="@string/login"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_body_regular"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/password"
+                app:layout_constraintStart_toStartOf="@+id/password"
+                app:layout_constraintTop_toBottomOf="@+id/password"/>
+
+
+        <RelativeLayout
+                android:id="@+id/textView31"
+                android:layout_width="0dp"
+                android:layout_marginTop="30dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                app:layout_constraintEnd_toEndOf="@+id/textView5"
+                app:layout_constraintStart_toStartOf="@+id/textView5"
+                app:layout_constraintTop_toBottomOf="@+id/textView5">
+
+            <TextView
+                    android:id="@+id/tvText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textSize="@dimen/text_title_regular"
+                    android:text="@string/or"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"/>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_toLeftOf="@id/tvText"
+                    android:background="#FFFFFF"
+            />
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:layout_toRightOf="@id/tvText"
+                    android:background="#FFF"
+            />
+
+        </RelativeLayout>
+
+        <!--
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_2"
+            android:text="OR"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_title_regular"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/textView5"
+            app:layout_constraintStart_toStartOf="@+id/textView5"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+-->
+
+
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_outline"
+                android:gravity="center"
+                android:padding="@dimen/padding_2"
+                android:layout_marginTop="30dp"
+                android:text="@string/create_new_account"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_body_regular"
+                android:id="@+id/create"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/textView5"
+                app:layout_constraintStart_toStartOf="@+id/textView5"
+                app:layout_constraintTop_toBottomOf="@+id/textView31"/>
+
+        <TextView
+                android:layout_width="0dp"
+                android:layout_marginTop="30dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/by_using_the_app_you_agree_with_our_terms_and_conditions"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:id="@+id/termsandc"
+                app:layout_constraintEnd_toEndOf="@+id/textView5"
+                app:layout_constraintStart_toStartOf="@+id/textView5"
+                app:layout_constraintTop_toBottomOf="@+id/create"/>
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

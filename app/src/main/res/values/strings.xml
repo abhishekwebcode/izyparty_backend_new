@@ -1,0 +1,361 @@
+<resources>
+    <string name="default_time">Please select a time slot</string>
+    <string name="default_allerygy1">Gluten</string>
+    <string name="default_allerygy2">Dog</string>
+    <string-array name="times">
+        <item>Please select a time slot</item>
+        <item>0:00</item>
+        <item>0:30</item>
+        <item>1:00</item>
+        <item>1:30</item>
+        <item>2:00</item>
+        <item>2:30</item>
+        <item>3:00</item>
+        <item>3:30</item>
+        <item>4:00</item>
+        <item>4:30</item>
+        <item>5:00</item>
+        <item>5:30</item>
+        <item>6:00</item>
+        <item>6:30</item>
+        <item>7:00</item>
+        <item>7:30</item>
+        <item>8:00</item>
+        <item>8:30</item>
+        <item>9:00</item>
+        <item>9:30</item>
+        <item>10:00</item>
+        <item>10:30</item>
+        <item>11:00</item>
+        <item>11:30</item>
+        <item>12:00</item>
+        <item>12:30</item>
+        <item>13:00</item>
+        <item>13:30</item>
+        <item>14:00</item>
+        <item>14:30</item>
+        <item>15:00</item>
+        <item>15:30</item>
+        <item>16:00</item>
+        <item>16:30</item>
+        <item>17:00</item>
+        <item>17:30</item>
+        <item>18:00</item>
+        <item>18:30</item>
+        <item>19:00</item>
+        <item>19:30</item>
+        <item>20:00</item>
+        <item>20:30</item>
+        <item>21:00</item>
+        <item>21:30</item>
+        <item>22:00</item>
+        <item>22:30</item>
+        <item>23:00</item>
+        <item>23:30</item>
+    </string-array>
+    <string name="FACEBOOK_APP_ID" translatable="false">303423527243659</string>
+    <string name="ACCOUNT_KIT_CLIENT_TOKEN" translatable="false">8bf79515cbe986f67a9c437d1bf83868</string>
+    <string name="app_name">IzyParty</string>
+
+    <string name="loading1">Loading ...</string>
+    <string name="error1">Error Accepting Invite</string>
+    <string name="error">Error</string>
+    <string name="updating_party">Error updating your party</string>
+    <string name="event_created">Your Event was created</string>
+    <string name="couldnt_party_create">Couldn\'t create your party</string>
+    <string name="no_attendees_selected">No attendees selected, please add some in next screen</string>
+    <string name="cancelled_contact_select">Cancelled contact selection</string>
+    <string name="fill_all_fields">Please fill all the fields correctly</string>
+    <string name="add_attendees">Add attendees</string>
+    <string name="contact_permission_text">Contact Permission is required to select attendees</string>
+    <string name="select_attendees_title">Select Attendees</string>
+    <string name="successfully_added_gift">Successfully added your gift!</string>
+    <string name="successfully_added_todo">Successfully added your todo!</string>
+    <string name="is_delighted_toInvite">is delighted to invite you to his birthday party!</string>
+    <string name="response_sent">Response Sent!</string>
+    <string name="error_accpeting_invite">Error accepting Invite</string>
+    <string name="change_response_qustion">Tap here to change your decision.</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="error_fetching_invite">Error fetching invite</string>
+    <string name="event_deleted_succesfully">Event Deleted Successfully</string>
+    <string name="error_deleteing_event">Error Deleting Event</string>
+    <string name="event_updated">Your event was updated</string>
+    <string name="coudlnt_update_event">Couldn\'t update your event</string>
+    <string name="fill_all_fields_banner">Please fill all the fields correctly</string>
+    <string name="update_contacts">Update Contacts</string>
+    <string name="error_loading_contacts">Error loading your contacts</string>
+    <string name="event_updated_to_attendees">Your event was updated to your attendees</string>
+    <string name="sms_start_text">Hey! I am inviting you to my birthday using Izyparty, click here to respond</string>
+    <string name="add_phone_email">Add phone number to this event</string>
+    <string name="add">Add</string>
+    <string name="please_custom_detail">Please enter custom contact detail</string>
+    <string name="celular_or_email">Please enter a cellular number</string>
+    <string name="Error_loading_events">Error loading your events</string>
+    <string name="login_error_text">Error Logging In...</string>
+    <string name="signup_html"><![CDATA[By signing up , you agree to our <b><u>Terms and Conditions</u></b>]]></string>
+    <string name="logging_in_text">Logging In...</string>
+    <string name="error_logging_in">Error Logging In...</string>
+    <string name="successfully_updated">Successfully updated!</string>
+    <string name="couldnt_update_it">Couldnt Update It</string>
+    <string name="couldnt_update_choce_gift">Couldn\'t update your gift choice</string>
+    <string name="new_invite_notification">New Invite for</string>
+    <string name="rsvp_noti">You have been sent RSVP to a party by</string>
+    <string name="new_response_noti">"new response for party of "</string>
+    <string name="someones_noti_respond">" has responded to your invitation"</string>
+    <string name="add_gift">Add a Gift to this event</string>
+    <string name="error_loading_events">Error Loading your events</string>
+    <string name="add_todo_titel">Add To-do to this event</string>
+    <string name="Signup_cancelled">Signup Cancelled</string>
+    <string name="successful_signup">Sign Up successful,please login</string>
+    <string name="fill_alert_fields_signup">Please fill all the fields correctly</string>
+    <string name="fill_passwords_coorecy">Please fill passwords correctly</string>
+    <string name="error_rejecting_event">Error rejecting event</string>
+    <string name="error_loading_rsvp">Error loading your RSVPs</string>
+    <string name="has_invited_you">has invited you, please respond</string>
+    <string name="coudlnt_load_invite">Couldn\'t load your invite</string>
+    <string name="signing_up">Signing Up...</string>
+    <string name="inernte_unaviable">Internet Unavailable</string>
+    <string name="splhash_retry">Your internet connection seems unavailable, do you want to retry?</string>
+    <string name="error_updating_event">Error Updating Event</string>
+    <string name="add_new_birthday_party">Add new birthday party</string>
+    <string name="join_me_to_my_birthday_party">Join me to my birthday party!</string>
+    <string name="pleae_enter_name">Please enter name of the guest</string>
+    <string name="here_users_can_write_the_name_of_his_child_and_after_the_name_of_the_guest">here users can write the
+        name of his child and after the name of the guest.
+    </string>
+    <string name="allow_the_guest_to_see_the_responses">Allow the guest to see the responses</string>
+    <string name="yes_no">NO/YES</string>
+    <string name="name_of_the_guest">Name of the Guest ...</string>
+    <string name="add_custom_contacts">Add Custom Contacts</string>
+    <string name="create_event">Create Event</string>
+    <string name="events">Events</string>
+    <string name="invitations">Invitations</string>
+    <string name="change_event_details">Change Event Details</string>
+    <string name="view_responses">See the guests</string>
+    <string name="change_attendees">Add Attendees</string>
+    <string name="delete_event">Delete Event</string>
+    <string name="gifts">Gifts</string>
+    <string name="easyparty">IzyParty</string>
+    <string name="manage_invites">Manage invites</string>
+    <string name="respond_to_hosts">Respond to hosts</string>
+    <string name="manage_time">Manage time</string>
+    <string name="to_do_list">To-Do List</string>
+    <string name="never_forget_you_kids_wish">Never forget you kids wish</string>
+    <string name="party_theme">Party Theme</string>
+    <string name="please_indicate_if_there_is_a_special_theme_for_the_party">Indicate if there is a theme</string>
+    <string name="enter_theme_here">Enter theme here...</string>
+    <string name="date">Detail of the Party</string>
+    <string name="time_start">Time Start</string>
+    <string name="time_end">Time End</string>
+    <string name="venue">Venue</string>
+    <string name="indicate_all_the_informations_regarding_the_bithday_party_of_your_child_and_send_the_invitation_n_it_doesn_t_prevent_you_to_give_a_funny_invitation_card_to_the_kids">
+        INDICATE ALL THE INFORMATION REGARDING  <b>THE BIRTHDAY</b> PARTY OF YOUR CHILD AND SEND THE INVITATION (IT DOESN’T
+        PREVENT YOU TO GIVE A FUNNY INVITATION CARD TO THE KIDS)
+    </string>
+    <string name="street_addresse">Street Addresse</string>
+    <string name="zip_code_and_city">Zip code and City</string>
+    <string name="city_name">City Name</string>
+    <string name="district">District</string>
+    <string name="zip_code">Zip Code</string>
+    <string name="add_here_all_the_infomation_n_required_such_as_ndrop_pin_code">Add here all the information required
+        such as Drop Pin Code
+    </string>
+    <string name="country">Country</string>
+    <string name="update">Update</string>
+    <string name="pool_party">Pool Party</string>
+    <string name="invites">Invites</string>
+    <string name="plan_share_invite">Plan, Share, Invite</string>
+    <string name="email_address">Email address</string>
+    <string name="password">Password</string>
+    <string name="login">LOGIN</string>
+    <string name="or">OR</string>
+    <string name="create_new_account">CREATE NEW ACCOUNT</string>
+    <string name="by_using_the_app_you_agree_with_our_terms_and_conditions">By using the app you agree with our terms
+        and conditions
+    </string>
+    <string name="sign_up">Sign up</string>
+    <string name="name">Name</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="cancel">Cancel</string>
+    <string name="rsvp_card">Invitation</string>
+    <string name="has_invited_you_please_respond">... has invited you, please respond</string>
+    <string name="accept_and_rsvp">Accept and RSVP</string>
+    <string name="reject">Reject</string>
+    <string name="easy_birthday">Easy Birthday</string>
+    <string name="does_your_child_have_allergies_why_we_ask_this">Does your child have allergies ?\n Why we ask this?
+    </string>
+    <string name="what_kid_does_not_love_a_birthday_party_though_tones_of_fun_birthday_parties_can_be_the_least_controllable_experience_for_the_food_allergic_family_there_will_be_people_who_do_not_know_and_who_do_not_know_your_child_lots_of_food_food_from_different_sources_and_a_home_event_center_or_park_that_is_unfamiliar">
+        What kid does not love a birthday party ?!\n Though tones of fun, birthday parties can be the least controllable
+        experience for the food-allergic family. There will be people who do not know and who do not know your child;
+        lots of food; food from different sources; and a home, event center, or park that is unfamiliar.
+    </string>
+    <string name="send">Send</string>
+    <string name="create">Create</string>
+    <string name="please_enter_name">Please enter Name ...</string>
+    <string name="allergies_indicated">Allergies Indicated</string>
+    <string name="allergies">Allergies</string>
+    <string name="select">Select</string>
+    <string name="profile">Profile</string>
+    <string name="contacts">Contacts</string>
+    <string name="select_text_lang">Please select your language</string>
+
+    <string name="descrpition_home">Now organise your birthday parties like never before</string>
+    <string name="termsandc">By using the app you agree with the term and conditions</string>
+    <string name="welcome">Welcome to IzyParty</string>
+    <string name="share_using">Share the event using...</string>
+    <string name="add_todo_using_calendar">Add this to your calendar?</string>
+    <string name="no_calendar_app">No calendar app was found</string>
+
+
+    <string name="leku_title_activity_location_picker">Location Picker</string>
+    <string name="leku_load_location_error">Something went wrong. Please try again.</string>
+    <string name="leku_no_search_results">There are no results for your search</string>
+    <string name="leku_unknown_location">unknown location</string>
+    <string name="leku_voice_search_promp">Search by voice…</string>
+    <string name="leku_voice_search_extra_language">en-EN</string>
+    <string name="leku_toolbar_action_voice_title">Voice</string>
+    <string name="leku_search_hint">Search</string>
+
+
+    <string name="error_map_pick">Couldn\'t pick your selected location</string>
+    <string name="maps_api_key" translatable="false">AIzaSyD0-6T-OEouGIjTwnFU4m3SJmiusbiccmY</string>
+    <string name="success_map">Map selection done</string>
+
+    <string-array name="foods">
+        <item>No Food Allergy</item>
+        <item>Gluten</item>
+        <item>Egg white</item>
+        <item>Peanut</item>
+        <item>Cow milk</item>
+        <item>Fabaceae (lentils, beans ...)</item>
+        <item>Walnut</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="pets">
+        <item>No Pet Allergy</item>
+        <item>Dog</item>
+        <item>Cat</item>
+        <item>Rabbit</item>
+        <item>Mouse</item>
+        <item>Others</item>
+    </string-array>
+    <string name="gift_selected">Gift Selected:</string>
+    <string name="descrpition_todo">Add TO-DOs to make your birthday planning easier</string>
+    <string name="descrpition_gift">Add gifts to your events and let your guests choose from your selection!</string>
+    <string name="welcome1">Make your invitation complete!</string>
+    <string name="welcome2">Manage all your organisation</string>
+    <string name="please_enter_your_allergy_precisely">Please put other allergies here...</string>
+    <string name="title_activity_maps_select_prebuilt">Map</string>
+    <string name="no_allergies">No Allergies</string>
+    <string name="logout">Logout</string>
+
+    <string name="my_profile">My Profile</string>
+    <string name="my_name">My Name</string>
+    <string name="my_email">My Email</string>
+    <string name="error_loading_profile">Error loading profile</string>
+    <string name="change_password">Change Password</string>
+    <string name="enter_existing_password">Enter existing password</string>
+    <string name="Enter_new_password">Enter new password</string>
+    <string name="error_updating_password">Error updating password</string>
+    <string name="updated_password">Password Updated</string>
+    <string name="password_fields_empty">Please fill out all the fields</string>
+    <string name="password_wrong">Your entered password is wrong</string>
+    <string name="password_dont_match">Your new and confirm passwords are not same</string>
+    <string name="logged_out_title">Session Expired</string>
+    <string name="logged_out_message">Your session has expired, please login again to continue</string>
+    <string name="ok">Ok</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="no_browser_app">No web browser was found, please install one for this action</string>
+    <string name="going">Your response has already been defined as Accepted, click here to change it.</string>
+    <string name="notgoing">Your response has already been defined as Declined, click here to change it</string>
+    <string name="click_on_map_to_select_your_venue">Tap on map to select your venue</string>
+    <string name="no_point_seletced">Please tap anywhere on map to select venue</string>
+    <string name="click_on_the_map_preview_to_see_more">Tap on the map to open location on map</string>
+
+    <string name="registeredUsers">Registered IzyParty Attendees</string>
+    <string name="nonAppPhoneNumbers">Un-Registered IzyParty Attendees</string>
+    <string name="error_loading_attendees">Error loading attendees to your party</string>
+    <string name="view_attendees">View Attendees</string>
+    <string name="party">party</string>
+    <string name="update_event_notification_text">Some changes were done for</string>
+    <string name="change_was_made_by">Tap here to view changes made by</string>
+    <string name="tap_here_to_select_gift_added">Tap here to select this gift choice before it is gone.The gift choice
+        was added by
+    </string>
+    <string name="new_gift_title">New gift choice</string>
+    <string name="new_gift_added_for">New gift choice added for</string>
+    <string name="new1">New!</string>
+    <string name="Error_loading_gifts">Error loading your gifts</string>
+    <string name="todo_add_error">Please enter todo correctly</string>
+    <string name="gift_add_error">Please enter the gift name correctly</string>
+    <string name="select_gift">Select gift</string>
+    <string name="new_gift_selected_for">"New gift selected for "</string>
+    <string name="click_here_to_get_gift_selected_by">"Tap here to view gift selected by "</string>
+    <string name="selected">Selected</string>
+    <string name="add_contacts">Add Contacts</string>
+    <string name="phonebook">Add From Phonebook</string>
+    <string name="custom_numbers">Enter Attendee Manually</string>
+    <string name="add_attendee">Add attendees</string>
+    <string name="your_phone">Your phone number</string>
+    <string name="successful_reset_password">Your password has been reset</string>
+    <string name="reset_cancelled">You cancelled reset of password</string>
+    <string name="resetting">Resetting your password...</string>
+    <string name="update_passoword">Update password</string>
+    <string name="continue2">Continue</string>
+    <string name="error_retrieiving_gufts">Error retrieving your gifts</string>
+    <string name="no_gift_selected">You have not selected any gift for this party</string>
+    <string name="change_question_gift">Would you like to change your choice?</string>
+    <string name="gift_selected_title">You have selected your gift as -</string>
+    <string name="change_gift_choice">Change gift</string>
+    <string name="dont_change">Dont change</string>
+    <string name="NO_GIFT_TITLE">No gift to this party</string>
+    <string name="already_selected">This gift has been selected by someone else</string>
+    <string name="your_gift">Your selected gift</string>
+    <string name="was_deleted">was deleted by</string>
+    <string name="click_del">Tap here to select a new gift for party of</string>
+    <string name="interntaional_warning">Please enter your complete phone number in international format including +
+        sign
+    </string>
+    <string name="please_select_time_slot">Please select a time slot</string>
+    <string name="time_warning">Please enter ending time after starting time</string>
+    <string name="mes_v_nements">My Events</string>
+    <string name="invitation_screen_title">My Recieved Invitations</string>
+    <string name="View_Participants_title">Participants</string>
+    <string name="finish_text">Finish</string>
+    <string name="back">Back</string>
+    <string name="participants">Participants</string>
+    <string name="no_events">No Event, to create one click on the Plus</string>
+    <string name="please_enter_the_name_of_your_child">Name of the child for whom organize the event</string>
+    <string name="validate_the_event">Validate the event</string>
+    <string name="add_participants">Add Participants</string>
+    <string name="add_participants_later">Add Participants Later</string>
+    <string name="gifts_title">My Gifts</string>
+    <string name="add_event_title">Add New Party</string>
+    <string name="choose_allergies">Choose Allergies</string>
+    <string name="todo_title">My To-Do</string>
+    <string name="party_overview">Party Overview</string>
+    <string name="no_location">No map location was selected for this party</string>
+    <string name="action">Actions</string>
+    <string name="going_title">Going</string>
+    <string name="Notgoing_title">Not Going</string>
+    <string name="unknown_title">Not Responded</string>
+    <string name="Resend_notifi">Remind Unresponsive\n Guests</string>
+    <string name="error_notifying_guests">Error Notifying Guests</string>
+    <string name="NOTFI">Re-notified guests successfully</string>
+    <string name="no_events_other">No Events</string>
+    <string name="events_option_title">Manage Party</string>
+    <string name="edit_party">Edit Party Details</string>
+    <string name="see_responses">See Guests Responses</string>
+    <string name="PASSWORD_LENGTH">Your password must be 8 characters long</string>
+    <string name="PASSWORD_NODIGIT">Your password must have atleast 1 number</string>
+    <string name="PASSWORD_NOUPPER">Your password must have atleast 1 uppercase letter</string>
+    <string name="PASSWORD_SPECIALCHAR">Your password must have atleast 1 special character</string>
+    <string name="number">Number</string>
+    <string name="present">Present</string>
+    <string name="Absent">Absent</string>
+    <string name="allergy_childName_error">Please enter the name of your child</string>
+    <string name="allergy_childName">Your child\'s name...</string>
+    <string name="bday_title">Birthday</string>
+</resources>

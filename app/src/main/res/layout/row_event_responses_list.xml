@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.card.MaterialCardView
+        android:id="@+id/edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="@dimen/margin_2"
+        android:layout_marginRight="@dimen/margin_2"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout2"
+        app:layout_constraintVertical_bias="0.06" xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/padding_3">
+
+        <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=".."
+                android:gravity="center"
+                android:textAlignment="center"
+                android:scrollHorizontally="false"
+                android:textColor="@color/barBlue"
+                android:textSize="@dimen/text_title_regular"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/intent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/intent" />
+
+        <ImageView
+                android:id="@+id/intent"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:tint="@color/blue"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/linear"
+                app:srcCompat="@drawable/ic_keyboard_arrow_right_black_24dp" />
+
+        <LinearLayout
+                android:layout_marginTop="15dp"
+                android:id="@+id/linear"
+                app:layout_constraintTop_toBottomOf="@id/name"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:orientation="vertical"
+                android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:textColor="@color/barBlue"
+                      android:textSize="15sp"
+                      android:textStyle="bold"
+                      android:gravity="center"
+                      android:text="@string/yes"
+                      android:id="@+id/response"
+            />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:textColor="@color/barBlue"
+                      android:textSize="15sp"
+                      android:textStyle="bold"
+                      android:gravity="center"
+                      android:text="@string/date"
+                      android:id="@+id/date"
+            />
+            <View
+                    android:visibility="gone"
+                    android:id="@+id/divider_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_margin="10dp"
+                    android:background="#2F000000"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:textColor="@color/barBlue"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:text=""
+                    android:id="@+id/childNameAllergy"
+                    />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:textColor="@color/barBlue"
+                      android:textSize="15sp"
+                      android:textStyle="bold"
+                      android:gravity="center"
+                      android:visibility="gone"
+                      android:text="@string/allergies_indicated"
+                      android:id="@+id/allergies"
+            />
+            <View
+                    android:visibility="gone"
+                    android:id="@+id/divider_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="10dp"
+                    android:background="#2F000000"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:textColor="@color/barBlue"
+                      android:textSize="15sp"
+                      android:textStyle="bold"
+                      android:gravity="center"
+                      android:visibility="gone"
+                      android:text="@string/allergies"
+                      android:id="@+id/allergies1"
+            />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:textColor="@color/barBlue"
+                      android:textSize="15sp"
+                      android:textStyle="bold"
+                      android:gravity="center"
+                      android:text="@string/allergies"
+                      android:visibility="gone"
+                      android:id="@+id/allergies2"
+            />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:textColor="@color/barBlue"
+                      android:textSize="15sp"
+                      android:visibility="gone"
+                      android:textStyle="bold"
+                      android:gravity="center"
+                      android:text="@string/allergies"
+                      android:id="@+id/allergies3"
+            />
+<!-- GIFT ROW -->
+            <View
+                    android:visibility="gone"
+                    android:id="@+id/divider_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_margin="10dp"
+                    android:background="#2F000000"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:textColor="@color/barBlue"
+                      android:textSize="15sp"
+                      android:textStyle="bold"
+                      android:gravity="center"
+                      android:visibility="gone"
+                      android:text="@string/gift_selected"
+                      android:id="@+id/gift_title"
+            />
+            <View
+                    android:visibility="gone"
+                    android:id="@+id/divider_11"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="10dp"
+                    android:background="#2F000000"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:textColor="@color/barBlue"
+                      android:textSize="15sp"
+                      android:textStyle="bold"
+                      android:gravity="center"
+                      android:visibility="gone"
+                      android:text="@string/allergies"
+                      android:id="@+id/gift"
+            />
+            <!-- GIFT ROW -->
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+</android.support.design.card.MaterialCardView>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+>
+    <android.support.design.card.MaterialCardView
+            android:onClick="edit"
+            android:id="@+id/edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_2"
+            android:layout_marginRight="@dimen/margin_2"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="16dp"
+            android:layout_margin="10dp"
+    >
+        <LinearLayout
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:android="http://schemas.android.com/apk/res/android" android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+        >
+
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+            >
+                <TextView
+                        android:layout_width="match_parent"
+                        android:scrollHorizontally="false"
+                        android:singleLine="false"
+                        android:layout_gravity="center"
+                        android:padding="5dp"
+                        android:gravity="center"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Text 1"
+                        android:id="@+id/text"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:textFontWeight="1000"
+                        android:background="@color/white"
+                        android:textAlignment="center"
+
+                />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:padding="3dp"
+            >
+                <Button
+                        app:buttonTint="@android:color/holo_blue_dark"
+                        android:buttonTint="@android:color/holo_blue_dark"
+                        android:id="@+id/checkbox"
+                        android:text="@string/select"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </android.support.design.card.MaterialCardView>
+</LinearLayout>
+
+

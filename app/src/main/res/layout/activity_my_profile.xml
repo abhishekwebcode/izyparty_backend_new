@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+    <android.support.constraint.ConstraintLayout
+            android:id="@+id/rootView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/new_background"
+            tools:context=".ui.auth.LoginActivity">
+
+
+        <android.support.design.widget.AppBarLayout
+                android:id="@+id/appBarLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/new_background"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            <include layout="@layout/custom_app_bar"/>
+        </android.support.design.widget.AppBarLayout>
+        <ImageView
+                android:visibility="gone"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/ic_shipping"/>
+
+
+        <android.support.constraint.Guideline
+                android:id="@+id/guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="@dimen/verticalGuideline" />
+
+        <android.support.constraint.Guideline
+                android:id="@+id/guideline2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_end="@dimen/verticalGuideline" />
+
+
+        <TextView
+                android:text="@string/my_name"
+                android:id="@+id/name1"
+                android:layout_width="0dp"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_2"
+                android:layout_marginEnd="@dimen/margin_2"
+                android:hint="@string/name"
+                android:inputType="textEmailAddress"
+                android:padding="@dimen/padding_2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/appBarLayout2"
+                app:layout_constraintVertical_bias="0.138"
+        />
+
+        <TextView
+                android:id="@+id/name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_edit_text"
+                android:hint="@string/name"
+                android:inputType="textEmailAddress"
+                android:padding="@dimen/padding_2"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="@+id/name1"
+                app:layout_constraintStart_toStartOf="@+id/name1"
+                app:layout_constraintTop_toBottomOf="@+id/name1" />
+
+        <TextView
+                android:id="@+id/name3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_2"
+                android:text="@string/my_email"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="@+id/name"
+                app:layout_constraintStart_toStartOf="@+id/name"
+                app:layout_constraintTop_toBottomOf="@+id/name" />
+
+        <TextView
+                android:id="@+id/email"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_2"
+                android:background="@drawable/white_edit_text"
+                android:drawablePadding="@dimen/padding_2"
+
+                android:hint="@string/email_address"
+                android:inputType="textEmailAddress"
+                android:padding="@dimen/padding_2"
+                app:layout_constraintEnd_toEndOf="@+id/name3"
+                app:layout_constraintStart_toStartOf="@+id/name3"
+                app:layout_constraintTop_toBottomOf="@+id/name3" />
+
+
+
+
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

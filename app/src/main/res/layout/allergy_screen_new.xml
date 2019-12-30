@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+    <android.support.constraint.ConstraintLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/new_background"
+            tools:context=".ui.new1.Allergy"
+    >
+        <android.support.design.widget.AppBarLayout
+                android:id="@+id/appBarLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/new_background"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+            <include layout="@layout/custom_app_bar"/>
+        </android.support.design.widget.AppBarLayout>
+
+        <ImageView
+                android:id="@+id/imageView2" android:visibility="gone"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintTop_toBottomOf="@id/appBarLayout2"
+                app:srcCompat="@drawable/ic_shipping"
+                android:background="@color/colorAccent"
+        />
+
+
+        <LinearLayout
+                app:layout_constraintTop_toBottomOf="@id/appBarLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical">
+            <TextView
+                    android:id="@+id/welcome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="..."
+                    android:textSize="20dp"
+                    android:padding="20dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+            />
+            <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:paddingLeft="100dp"
+                    android:paddingRight="100dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="200dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:src="@drawable/birthday"
+                    android:scaleType="centerCrop"
+            />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:text="@string/does_your_child_have_allergies_why_we_ask_this"
+                      android:textSize="15dp"
+                      android:padding="5dp"
+                      android:layout_marginLeft="20dp"
+                      android:layout_marginRight="20dp"
+                      android:background="@color/white"
+                      android:textAlignment="center"
+
+            />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:text="@string/what_kid_does_not_love_a_birthday_party_though_tones_of_fun_birthday_parties_can_be_the_least_controllable_experience_for_the_food_allergic_family_there_will_be_people_who_do_not_know_and_who_do_not_know_your_child_lots_of_food_food_from_different_sources_and_a_home_event_center_or_park_that_is_unfamiliar"
+                      android:padding="5dp"
+                      android:textColor="@color/grey_300"
+                      android:layout_marginLeft="20dp"
+                      android:layout_marginRight="20dp"
+                      android:textAlignment="viewStart"
+
+                      android:gravity="start"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:orientation="horizontal" android:padding="20dp"
+            >
+                <TextView
+                        android:layout_width="wrap_content" android:layout_height="match_parent"
+                        android:text="@string/yes_no"
+                        android:layout_gravity="left" android:textStyle="bold"
+                        android:gravity="center"
+
+                />
+                <Space
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"/>
+
+                <com.suke.widget.SwitchButton
+                        app:sb_checked_color="#331EB5"
+                        app:sb_uncheckcircle_color="#331EB5"
+                        app:sb_show_indicator="false"
+                        android:onClick="onCheckk"
+                        android:layout_gravity="right"
+                        android:id="@+id/switch_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_margin="10dp"
+                    android:background="#2F000000"/>
+            <EditText android:imeOptions="actionDone"
+                    android:visibility="visible"
+                    android:hint="@string/allergy_childName"
+                    android:padding="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:layout_margin="10dp"
+                    android:id="@+id/childName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            <com.jaredrummler.materialspinner.MaterialSpinner
+                    android:background="@color/white"
+                    app:ms_hint="@string/default_allerygy1"
+                    android:layout_margin="10dp"
+                    android:id="@+id/spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            <com.jaredrummler.materialspinner.MaterialSpinner
+                    android:background="@color/white"
+                    app:ms_hint="@string/default_allerygy2"
+                    android:layout_margin="10dp"
+                    android:id="@+id/spinner1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            <EditText android:imeOptions="actionDone"
+                      android:visibility="gone"
+                      android:hint="@string/please_enter_your_allergy_precisely"
+                      android:padding="30dp"
+                      android:layout_marginTop="10dp"
+                      android:background="@color/white"
+                      android:layout_margin="10dp"
+                      android:id="@+id/spinner2"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"/>
+            <Button
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="#331EB5"
+                    android:shadowColor="#331EB5"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/white_edit_text"
+                    android:id="@+id/send"
+                    android:textAllCaps="false"
+                    android:text="@string/send"
+            />
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

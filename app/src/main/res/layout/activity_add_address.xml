@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+                                                 android:background="@drawable/new_background"
+        android:layout_height="wrap_content"
+
+        tools:context=".ui.home.HomeActivity">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appBarLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/barBlue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RelativeLayout
+                    android:background="@drawable/new_background"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="16dp"
+                    android:src="@mipmap/ic_launcher" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Invites"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_title_regular" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/padding_3"
+                    android:tint="@color/white"
+                    app:srcCompat="@drawable/ic_more_vert_black_24dp" />
+            </RelativeLayout>
+        </android.support.design.widget.AppBarLayout>
+
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_xl"
+            android:text="Why address?"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_heading_big"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appBarLayout2" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_3"
+            android:paddingStart="@dimen/padding_2"
+            android:textColor="@color/white"
+            android:paddingEnd="@dimen/padding_2"
+            android:text="It allows you to integrate directly in your invite your favorite address."
+            android:textAlignment="center"
+            android:textSize="@dimen/text_body_regular"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+        <EditText android:imeOptions="actionDone"
+            android:id="@+id/editText3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_2"
+            android:layout_marginTop="@dimen/margin_l"
+            android:layout_marginEnd="@dimen/margin_2"
+            android:background="@drawable/white_edit_text"
+            android:ems="10"
+            android:hint="Country"
+            android:inputType="textPersonName"
+            android:padding="@dimen/padding_2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+
+        <EditText android:imeOptions="actionDone"
+            android:id="@+id/editText15"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_2"
+            android:layout_marginTop="@dimen/margin_2"
+            android:layout_marginEnd="@dimen/margin_2"
+            android:background="@drawable/white_edit_text"
+            android:ems="10"
+            android:hint="City"
+            android:inputType="textPersonName"
+            android:padding="@dimen/padding_2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText3" />
+
+
+        <EditText android:imeOptions="actionDone"
+            android:id="@+id/editText16"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="@dimen/margin_2"
+            android:layout_marginTop="@dimen/margin_2"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/white_edit_text"
+            android:ems="10"
+            android:hint="Address"
+            android:inputType="textPersonName"
+            android:padding="@dimen/padding_2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText15" />
+
+        <!-- In element below          app:layout_constraintBottom_toBottomOf="parent" -->
+        <android.support.design.button.MaterialButton
+            android:id="@+id/materialButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:textColor="@color/textGray"
+            app:backgroundTint="@color/textLightGray"
+            app:cornerRadius="10dp"
+            android:layout_marginTop="25dp"
+            app:layout_constraintEnd_toStartOf="@+id/materialButton"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText16" />
+
+
+        <android.support.design.button.MaterialButton
+            android:id="@+id/materialButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Apply"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/barBlue"
+            app:cornerRadius="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/materialButton2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/materialButton2"
+            app:layout_constraintTop_toTopOf="@+id/materialButton2" />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
