@@ -15,6 +15,22 @@
       },
       "oauth_client": [
         {
+          "client_id": "945115290847-kqs02p1l17qfls7g3fn58tge24aj79bv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.easyparty.invitation",
+            "certificate_hash": "48a8ac18ef9d5a52e41ab1f0fda65e5f0c4654b7"
+          }
+        },
+        {
+          "client_id": "945115290847-kbjsh3iqt846al86ulgb622m55o2i5ln.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.easyparty.invitation",
+            "certificate_hash": "661598eae8fa5590082c84fc12304399525b9d39"
+          }
+        },
+        {
           "client_id": "945115290847-kajicq78btpfdvribkqh2kn4u2pubhp7.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
@@ -29,7 +45,7 @@
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCZpBygUt83qO_j7NUlDy5cTpcqBpfzNAk"
+          "current_key": "AIzaSyCpS8Xv8freghS9OcJ3r32msdLv26_QqDY"
         }
       ],
       "services": {
@@ -38,6 +54,13 @@
             {
               "client_id": "945115290847-rf1dhnp4u6onmte7anhpvoq5evni5lf7.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "945115290847-14jjoh2mrllvao7ffp494rn9ibanet4a.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.ios.IzyParty"
+              }
             }
           ]
         }
@@ -45,20 +68,12 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:945115290847:android:bf33e61e21e41a35",
+        "mobilesdk_app_id": "1:945115290847:android:e9955d8a5d81de75ea1d6a",
         "android_client_info": {
-          "package_name": "com.example.invitation"
+          "package_name": "com.izyparty.invitation"
         }
       },
       "oauth_client": [
-        {
-          "client_id": "945115290847-n38q533394j9qigiud7csviamo3mhsia.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.example.invitation",
-            "certificate_hash": "62201adb0078737c74ae09cb1d8b554102005c9b"
-          }
-        },
         {
           "client_id": "945115290847-rf1dhnp4u6onmte7anhpvoq5evni5lf7.apps.googleusercontent.com",
           "client_type": 3
@@ -66,7 +81,7 @@
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCZpBygUt83qO_j7NUlDy5cTpcqBpfzNAk"
+          "current_key": "AIzaSyCpS8Xv8freghS9OcJ3r32msdLv26_QqDY"
         }
       ],
       "services": {
@@ -75,6 +90,13 @@
             {
               "client_id": "945115290847-rf1dhnp4u6onmte7anhpvoq5evni5lf7.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "945115290847-14jjoh2mrllvao7ffp494rn9ibanet4a.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.ios.IzyParty"
+              }
             }
           ]
         }

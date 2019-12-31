@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.card.MaterialCardView
+<android.support.design.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/edit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="20dp"
         android:layout_marginLeft="@dimen/margin_2"
+        android:layout_marginTop="5dp"
         android:layout_marginRight="@dimen/margin_2"
+        android:layout_marginBottom="20dp"
         app:cardCornerRadius="16dp"
         app:cardElevation="16dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/appBarLayout2"
-        app:layout_constraintVertical_bias="0.06" xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto">
+        app:layout_constraintVertical_bias="0.06">
 
     <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
@@ -25,10 +25,10 @@
                 android:id="@+id/name"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text=".."
                 android:gravity="center"
-                android:textAlignment="center"
                 android:scrollHorizontally="false"
+                android:text=".."
+                android:textAlignment="center"
                 android:textColor="@color/barBlue"
                 android:textSize="@dimen/text_title_regular"
                 android:textStyle="bold"
@@ -42,127 +42,170 @@
                 android:layout_height="40dp"
                 android:tint="@color/blue"
                 app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/linear"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintBottom_toTopOf="@id/linear"
                 app:srcCompat="@drawable/ic_keyboard_arrow_right_black_24dp" />
 
         <LinearLayout
-                android:layout_marginTop="15dp"
                 android:id="@+id/linear"
-                app:layout_constraintTop_toBottomOf="@id/name"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
                 android:orientation="vertical"
-                android:layout_width="wrap_content" android:layout_height="wrap_content">
-            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
-                      android:textColor="@color/barBlue"
-                      android:textSize="15sp"
-                      android:textStyle="bold"
-                      android:gravity="center"
-                      android:text="@string/yes"
-                      android:id="@+id/response"
-            />
-            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
-                      android:textColor="@color/barBlue"
-                      android:textSize="15sp"
-                      android:textStyle="bold"
-                      android:gravity="center"
-                      android:text="@string/date"
-                      android:id="@+id/date"
-            />
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/name">
+
+            <TextView
+                    android:id="@+id/response"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/yes"
+                    android:textColor="@color/barBlue"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            <TextView
+                    android:id="@+id/date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/date"
+                    android:textColor="@color/barBlue"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
             <View
-                    android:visibility="gone"
                     android:id="@+id/divider_1"
                     android:layout_width="match_parent"
                     android:layout_height="2dp"
                     android:layout_margin="10dp"
-                    android:background="#2F000000"/>
-            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
-                    android:textColor="@color/barBlue"
-                    android:textSize="15sp"
-                    android:textStyle="bold"
+                    android:background="#2F000000"
+                    android:visibility="gone" />
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
                     android:gravity="center"
-                    android:visibility="gone"
-                    android:text=""
-                    android:id="@+id/childNameAllergy"
-                    />
-            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
-                      android:textColor="@color/barBlue"
-                      android:textSize="15sp"
-                      android:textStyle="bold"
-                      android:gravity="center"
-                      android:visibility="gone"
-                      android:text="@string/allergies_indicated"
-                      android:id="@+id/allergies"
-            />
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                <TextView
+                        android:id="@+id/childNameTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="start"
+                        android:text="@string/ChildNameTitle"
+                        android:textColor="@color/barBlue"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+                <TextView
+                        android:id="@+id/childNameAllergy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="start"
+                        android:text=""
+                        android:textColor="@color/barBlue"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+            </LinearLayout>
+
             <View
-                    android:visibility="gone"
                     android:id="@+id/divider_2"
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:layout_margin="10dp"
-                    android:background="#2F000000"/>
-            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
-                      android:textColor="@color/barBlue"
-                      android:textSize="15sp"
-                      android:textStyle="bold"
-                      android:gravity="center"
-                      android:visibility="gone"
-                      android:text="@string/allergies"
-                      android:id="@+id/allergies1"
-            />
-            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
-                      android:textColor="@color/barBlue"
-                      android:textSize="15sp"
-                      android:textStyle="bold"
-                      android:gravity="center"
-                      android:text="@string/allergies"
-                      android:visibility="gone"
-                      android:id="@+id/allergies2"
-            />
-            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
-                      android:textColor="@color/barBlue"
-                      android:textSize="15sp"
-                      android:visibility="gone"
-                      android:textStyle="bold"
-                      android:gravity="center"
-                      android:text="@string/allergies"
-                      android:id="@+id/allergies3"
-            />
-<!-- GIFT ROW -->
+                    android:background="#2F000000"
+                    android:visibility="gone" />
+
+            <TextView
+                    android:id="@+id/allergies"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/allergies_indicated"
+                    android:textColor="@color/barBlue"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+            <TextView
+                    android:id="@+id/allergies1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/allergies"
+                    android:textColor="@color/barBlue"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+            <TextView
+                    android:id="@+id/allergies2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/allergies"
+                    android:textColor="@color/barBlue"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+            <TextView
+                    android:id="@+id/allergies3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/allergies"
+                    android:textColor="@color/barBlue"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+            <!-- GIFT ROW -->
             <View
-                    android:visibility="gone"
                     android:id="@+id/divider_10"
                     android:layout_width="match_parent"
                     android:layout_height="2dp"
                     android:layout_margin="10dp"
-                    android:background="#2F000000"/>
-            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
-                      android:textColor="@color/barBlue"
-                      android:textSize="15sp"
-                      android:textStyle="bold"
-                      android:gravity="center"
-                      android:visibility="gone"
-                      android:text="@string/gift_selected"
-                      android:id="@+id/gift_title"
-            />
+                    android:background="#2F000000"
+                    android:visibility="gone" />
+
+            <TextView
+                    android:id="@+id/gift_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/gift_selected"
+                    android:textColor="@color/barBlue"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
             <View
-                    android:visibility="gone"
                     android:id="@+id/divider_11"
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:layout_margin="10dp"
-                    android:background="#2F000000"/>
-            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
-                      android:textColor="@color/barBlue"
-                      android:textSize="15sp"
-                      android:textStyle="bold"
-                      android:gravity="center"
-                      android:visibility="gone"
-                      android:text="@string/allergies"
-                      android:id="@+id/gift"
-            />
+                    android:background="#2F000000"
+                    android:visibility="gone" />
+
+            <TextView
+                    android:id="@+id/gift"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/allergies"
+                    android:textColor="@color/barBlue"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
             <!-- GIFT ROW -->
         </LinearLayout>
     </android.support.constraint.ConstraintLayout>

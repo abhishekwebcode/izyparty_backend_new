@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           xmlns:tools="http://schemas.android.com/tools"
-          package="com.easyparty.invitation">
+          package="com.izyparty.invitation">
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
          Google Maps Android API v2, but you must specify either coarse or fine
@@ -22,7 +22,7 @@
             android:required="false"/>
 
     <application
-            android:name=".PrefsApplication"
+            android:name="com.izyparty.invitation.PrefsApplication"
             android:allowBackup="true"
             android:fullBackupContent="@xml/backup_config"
             android:icon="@mipmap/ic_launcher"
@@ -30,20 +30,20 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".ui.eventsManage.EventOverview" android:screenOrientation="portrait">
+        <activity android:name="com.izyparty.invitation.ui.eventsManage.EventOverview" android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".templates.ForgotPassword">
+        <activity android:name="com.izyparty.invitation.templates.ForgotPassword">
         </activity>
         <activity
-                android:name=".templates.showAttendees"
+                android:name="com.izyparty.invitation.templates.showAttendees"
                 android:screenOrientation="portrait">
         </activity>
         <activity
-                android:name=".templates.ChangePassword"
+                android:name="com.izyparty.invitation.templates.ChangePassword"
                 android:screenOrientation="portrait">
         </activity>
         <activity
-                android:name=".templates.My_Profile"
+                android:name="com.izyparty.invitation.templates.My_Profile"
                 android:screenOrientation="portrait">
         </activity>
         <!--
@@ -59,13 +59,13 @@
                 android:value="@string/maps_api_key"/>
 
         <activity
-                android:name=".templates.MapsActivitySelectPrebuilt"
+                android:name="com.izyparty.invitation.templates.MapsActivitySelectPrebuilt"
                 android:label="@string/title_activity_maps_select_prebuilt"
                 android:screenOrientation="portrait">
         </activity>
 
         <service
-                android:name=".utils.push.messaging"
+                android:name="com.izyparty.invitation.utils.push.messaging"
                 android:enabled="true">
             <intent-filter>
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
@@ -74,7 +74,7 @@
         </service>
 
         <activity
-                android:name=".event.Respond.GiftSelect"
+                android:name="com.izyparty.invitation.event.Respond.GiftSelect"
                 android:screenOrientation="portrait">
         </activity>
 
@@ -83,42 +83,42 @@
                 android:required="false"/>
 
         <activity
-                android:name=".ui.eventsManage.seeResponsesNew"
+                android:name="com.izyparty.invitation.ui.eventsManage.seeResponsesNew"
                 android:screenOrientation="portrait">
         </activity>
         <activity
-                android:name=".ui.OnboardingActivity"
+                android:name="com.izyparty.invitation.ui.OnboardingActivity"
                 android:screenOrientation="portrait">
         </activity>
         <activity
-                android:name=".ui.eventsManage.EditEvent"
+                android:name="com.izyparty.invitation.ui.eventsManage.EditEvent"
                 android:screenOrientation="portrait">
         </activity>
         <activity
-                android:name=".ui.eventsManage.EventsManageOptionsScreen"
+                android:name="com.izyparty.invitation.ui.eventsManage.EventsManageOptionsScreen"
                 android:focusableInTouchMode="true"
                 android:screenOrientation="portrait"
                 android:windowSoftInputMode="adjustResize">
         </activity>
         <activity
-                android:name=".event.Respond.showInvitation"
+                android:name="com.izyparty.invitation.event.Respond.showInvitation"
                 android:screenOrientation="portrait">
         </activity>
         <activity
-                android:name=".event.Respond.RespondsScreen"
-                android:parentActivityName=".ui.home.HomeActivity"
+                android:name="com.izyparty.invitation.event.Respond.RespondsScreen"
+                android:parentActivityName="com.izyparty.invitation.ui.home.HomeActivity"
                 android:screenOrientation="portrait">
         </activity>
         <activity
-                android:name=".event.EventContacts"
+                android:name="com.izyparty.invitation.event.EventContacts"
                 android:screenOrientation="portrait">
         </activity>
         <activity
-                android:name=".ui.home.AddEventPage1"
+                android:name="com.izyparty.invitation.ui.home.AddEventPage1"
                 android:screenOrientation="portrait">
         </activity>
         <activity
-                android:name=".templates.Splash"
+                android:name="com.izyparty.invitation.templates.Splash"
                 android:icon="@mipmap/ic_launcher"
                 android:label="@string/app_name"
                 android:screenOrientation="portrait">
@@ -129,36 +129,36 @@
             </intent-filter>
         </activity>
         <activity
-                android:name=".ui.new1.new_Gifts"
+                android:name="com.izyparty.invitation.ui.new1.new_Gifts"
                 android:label="Gifts"
                 android:screenOrientation="portrait">
         </activity>
         <activity
-                android:name=".ui.new1.NewToDoList"
+                android:name="com.izyparty.invitation.ui.new1.NewToDoList"
                 android:label="To Do List"
                 android:screenOrientation="portrait">
         </activity>
         <activity
-                android:name=".ui.auth.LoginActivity"
+                android:name="com.izyparty.invitation.ui.auth.LoginActivity"
                 android:icon="@mipmap/ic_launcher"
                 android:label="NewLogin"
                 android:screenOrientation="portrait">
         </activity>
         <activity
-                android:name=".ui.new1.Allergy"
+                android:name="com.izyparty.invitation.ui.new1.Allergy"
                 android:label="Allergy"
                 android:screenOrientation="portrait">
         </activity>
         <activity
-                android:name=".ui.home.EventsActivity"
+                android:name="com.izyparty.invitation.ui.home.EventsActivity"
                 android:screenOrientation="portrait">
         </activity>
         <activity
-                android:name=".ui.home.HomeActivity"
+                android:name="com.izyparty.invitation.ui.home.HomeActivity"
                 android:screenOrientation="portrait">
         </activity>
         <activity
-                android:name=".ui.auth.RegisterActivity"
+                android:name="com.izyparty.invitation.ui.auth.RegisterActivity"
                 android:screenOrientation="portrait">
         </activity>
 

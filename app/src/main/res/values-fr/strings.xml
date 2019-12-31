@@ -360,4 +360,5 @@
     <string name="allergy_childName">Le nom de votre enfant ...</string>
     <string name="allergy_childName_error">Veuillez saisir le nom de votre enfant</string>
     <string name="bday_title">Anniversaire</string>
+    <string name="ChildNameTitle">"Nom de l'enfant:   "</string>
 </resources>
