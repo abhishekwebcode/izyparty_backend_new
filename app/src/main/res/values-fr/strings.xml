@@ -202,7 +202,9 @@
     <string name="descrpition_home">Organisez maintenant vos fêtes d\'anniversaire comme jamais auparavant</string>
     <string name="welcome">Bienvenue sur IzyParty</string>
     <string name="termsandc">En utilisant l\'application, vous acceptez les termes et conditions</string>
-    <string name="add_todo_using_calendar">Ajoutez ceci à votre calendrier?</string>
+    <string name="add_todo_using_calendar">
+        Ajoutez l\'évènement à votre calendrier
+    </string>
     <string name="no_calendar_app">Aucune application de calendrier n\'a été trouvée</string>
 
     <!-- LEKU MAP TRANSALATIONS START -->

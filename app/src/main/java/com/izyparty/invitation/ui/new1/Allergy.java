@@ -3,6 +3,7 @@ package com.izyparty.invitation.ui.new1;
 
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.AsyncTask;
@@ -10,9 +11,13 @@ import android.os.Build;
 import android.os.Bundle;
 import android.provider.CalendarContract;
 import android.support.annotation.Nullable;
+import android.text.Layout;
 import android.util.Log;
 import android.view.View;
+import android.view.Window;
+import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -166,10 +171,30 @@ public class Allergy extends BaseActivity {
             AlertDialog d = builder
                     .setMessage(baseActivity.getString(R.string.add_todo_using_calendar))
                     .setPositiveButton(baseActivity.getString(R.string.yes), dialogClickListener)
-                    .setNegativeButton(baseActivity.getString(R.string.no), dialogClickListener)
-                    .show();
+                    .setNegativeButton(baseActivity.getString(R.string.no), dialogClickListener).create();
+            d.setOnShowListener(new DialogInterface.OnShowListener() {
+                @Override
+                public void onShow(DialogInterface dialog) {
+
+                    //Context context = Allergy.this;
+                    //Window view = ((AlertDialog)dialog).getWindow();
+
+                    //view.setBackgroundDrawableResource(R.color.colorPrompt);
+                    Button negButton = ((AlertDialog) dialog).getButton(DialogInterface.BUTTON_NEGATIVE);
+                    //negButton.setBackgroundColor(context.getResources().getColor(R.color.colorPromptButton));
+                    //negButton.setTextColor(context.getResources().getColor(R.color.colorPromptButtonText));
+
+                    LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
+                            LinearLayout.LayoutParams.WRAP_CONTENT,
+                            LinearLayout.LayoutParams.WRAP_CONTENT
+                    );
+                    params.setMargins(20,0,20,0);
+                    negButton.setLayoutParams(params);
+                }
+            });
             d.setCanceledOnTouchOutside(false);
             d.setCancelable(false);
+            d.show();
         } catch (Exception e) {
             e.printStackTrace();
             Toast.makeText(this, this.getString(R.string.no_calendar_app), Toast.LENGTH_SHORT).show();
