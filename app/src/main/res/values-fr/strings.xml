@@ -3,58 +3,6 @@
     <string name="default_time">Veuillez sélectionner un créneau horaire</string>
     <string name="default_allerygy1">Gluten</string>
     <string name="default_allerygy2">Chien</string>
-    <string-array name="times">
-        <item>Veuillez sélectionner un créneau horaire</item>
-        <item>0:00</item>
-        <item>0:30</item>
-        <item>1:00</item>
-        <item>1:30</item>
-        <item>2:00</item>
-        <item>2:30</item>
-        <item>3:00</item>
-        <item>3:30</item>
-        <item>4:00</item>
-        <item>4:30</item>
-        <item>5:00</item>
-        <item>5:30</item>
-        <item>6:00</item>
-        <item>6:30</item>
-        <item>7:00</item>
-        <item>7:30</item>
-        <item>8:00</item>
-        <item>8:30</item>
-        <item>9:00</item>
-        <item>9:30</item>
-        <item>10:00</item>
-        <item>10:30</item>
-        <item>11:00</item>
-        <item>11:30</item>
-        <item>12:00</item>
-        <item>12:30</item>
-        <item>13:00</item>
-        <item>13:30</item>
-        <item>14:00</item>
-        <item>14:30</item>
-        <item>15:00</item>
-        <item>15:30</item>
-        <item>16:00</item>
-        <item>16:30</item>
-        <item>17:00</item>
-        <item>17:30</item>
-        <item>18:00</item>
-        <item>18:30</item>
-        <item>19:00</item>
-        <item>19:30</item>
-        <item>20:00</item>
-        <item>20:30</item>
-        <item>21:00</item>
-        <item>21:30</item>
-        <item>22:00</item>
-        <item>22:30</item>
-        <item>23:00</item>
-        <item>23:30</item>
-    </string-array>
-
     <string name="app_name">IzyParty</string>
     <string name="loading1">Chargement ...</string>
     <string name="error1">Erreur lors de l\'acceptation de l\'invitation</string>
@@ -220,25 +168,6 @@
     <string name="success_map">Sélection de la carte effectuée</string>
     <string name="error_map_pick">Impossible de choisir l\'emplacement choisi</string>
 
-    <string-array name="foods">
-        <item>Pas d\'allergie alimentaire</item>
-        <item>Gluten</item>
-        <item>Blanc d\'oeuf</item>
-        <item>Arachide</item>
-        <item>Lactose</item>
-        <item>Fabaceae (lentilles, haricots ...)</item>
-        <item>Noix</item>        
-        <item>Autres</item>
-    </string-array>
-
-    <string-array name="pets">
-        <item>Pas d\'allergies aux animaux</item>
-        <item>Chien</item>
-        <item>Chat</item>
-        <item>Lapin</item>
-        <item>Rongeurs</item>
-        <item>Autres</item>
-    </string-array>
     <string name="gift_selected">Cadeau sélectionné:</string>
     <string name="descrpition_todo"> Ajoutez des tâches à effectuer pour faciliter la planification de votre anniversaire </string>
         <string name="descrpition_gift"> Ajoutez des cadeaux à vos événements et laissez vos invités choisir parmi votre sélection! </string>
@@ -363,4 +292,77 @@
     <string name="allergy_childName_error">Veuillez saisir le nom de votre enfant</string>
     <string name="bday_title">Anniversaire</string>
     <string name="ChildNameTitle">"Nom de l'enfant:   "</string>
+
+
+
+    <string-array name="foods">
+        <item>Pas d\'allergie alimentaire</item>
+        <item>Gluten</item>
+        <item>Blanc d\'oeuf</item>
+        <item>Arachide</item>
+        <item>Lactose</item>
+        <item>Fabaceae (lentilles, haricots ...)</item>
+        <item>Noix</item>        
+        <item>Autres</item>
+    </string-array>
+
+    <string-array name="pets">
+        <item>Pas d\'allergies aux animaux</item>
+        <item>Chien</item>
+        <item>Chat</item>
+        <item>Lapin</item>
+        <item>Rongeurs</item>
+        <item>Autres</item>
+    </string-array>
+    <string-array name="times">
+        <item>Veuillez sélectionner un créneau horaire</item>
+        <item>0:00</item>
+        <item>0:30</item>
+        <item>1:00</item>
+        <item>1:30</item>
+        <item>2:00</item>
+        <item>2:30</item>
+        <item>3:00</item>
+        <item>3:30</item>
+        <item>4:00</item>
+        <item>4:30</item>
+        <item>5:00</item>
+        <item>5:30</item>
+        <item>6:00</item>
+        <item>6:30</item>
+        <item>7:00</item>
+        <item>7:30</item>
+        <item>8:00</item>
+        <item>8:30</item>
+        <item>9:00</item>
+        <item>9:30</item>
+        <item>10:00</item>
+        <item>10:30</item>
+        <item>11:00</item>
+        <item>11:30</item>
+        <item>12:00</item>
+        <item>12:30</item>
+        <item>13:00</item>
+        <item>13:30</item>
+        <item>14:00</item>
+        <item>14:30</item>
+        <item>15:00</item>
+        <item>15:30</item>
+        <item>16:00</item>
+        <item>16:30</item>
+        <item>17:00</item>
+        <item>17:30</item>
+        <item>18:00</item>
+        <item>18:30</item>
+        <item>19:00</item>
+        <item>19:30</item>
+        <item>20:00</item>
+        <item>20:30</item>
+        <item>21:00</item>
+        <item>21:30</item>
+        <item>22:00</item>
+        <item>22:30</item>
+        <item>23:00</item>
+        <item>23:30</item>
+    </string-array>
 </resources>

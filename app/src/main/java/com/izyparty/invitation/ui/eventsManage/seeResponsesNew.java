@@ -152,12 +152,12 @@ class RESPONSE {
                         jsonObject.getString("_id"), jsonObject.getString("name"), jsonObject.getBoolean("intention"), date
                 );
                 if (!isGuest) {
+                    try {
+                        item.childName=jsonObject.getString("childNameAllergy");
+                    }catch (Exception e){e.printStackTrace();}
                     if (jsonObject.has("isAllergy")) {
                         if (jsonObject.getBoolean("isAllergy")) {
                             item.isAllergy = true;
-                            try {
-                                item.childName=jsonObject.getString("childNameAllergy");
-                            }catch (Exception e){e.printStackTrace();}
                             item.allergy1 = jsonObject.getString("allergy1");
                             item.allergy2 = jsonObject.getString("allergy2");
                             item.allergy3 = jsonObject.getString("allergy3");
@@ -204,6 +204,7 @@ class CustomListResponse extends ArrayAdapter<RESPONSE> {
         LayoutInflater inflater = context.getLayoutInflater();
         RESPONSE item = list.get(position);
         View rowView = inflater.inflate(R.layout.row_event_responses_list, null, true);
+        ((TextView)rowView.findViewById(R.id.childNameAllergy)).setText(item.childName);
         ((TextView)rowView.findViewById(R.id.name)).setText(item.name);
         ((TextView)rowView.findViewById(R.id.date)).setText(item.date);
         ((TextView)rowView.findViewById(R.id.response)).setText(item.intention?context.getString(R.string.present):context.getString(R.string.Absent));
@@ -215,9 +216,6 @@ class CustomListResponse extends ArrayAdapter<RESPONSE> {
             rowView.findViewById(R.id.divider_1).setVisibility(V);
             rowView.findViewById(R.id.divider_2).setVisibility(V);
             rowView.findViewById(R.id.allergies).setVisibility(V);
-            rowView.findViewById(R.id.childNameTitle).setVisibility(V);
-            rowView.findViewById(R.id.childNameAllergy).setVisibility(V);
-            ((TextView)rowView.findViewById(R.id.childNameAllergy)).setText(item.childName);
             Log.d(TAG, "getView: DEBUG ALLERGY + "+ String.valueOf(item.allergy2));
             Log.d(TAG, "getView: DEBUG ALLERGY + "+ String.valueOf(item.allergy2.equals("Autres")));
             if ("Others".equals(item.allergy1) || "Autres".equals(item.allergy1)) {

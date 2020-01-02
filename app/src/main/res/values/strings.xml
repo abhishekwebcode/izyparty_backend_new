@@ -2,57 +2,7 @@
     <string name="default_time">Please select a time slot</string>
     <string name="default_allerygy1">Gluten</string>
     <string name="default_allerygy2">Dog</string>
-    <string-array name="times">
-        <item>Please select a time slot</item>
-        <item>0:00</item>
-        <item>0:30</item>
-        <item>1:00</item>
-        <item>1:30</item>
-        <item>2:00</item>
-        <item>2:30</item>
-        <item>3:00</item>
-        <item>3:30</item>
-        <item>4:00</item>
-        <item>4:30</item>
-        <item>5:00</item>
-        <item>5:30</item>
-        <item>6:00</item>
-        <item>6:30</item>
-        <item>7:00</item>
-        <item>7:30</item>
-        <item>8:00</item>
-        <item>8:30</item>
-        <item>9:00</item>
-        <item>9:30</item>
-        <item>10:00</item>
-        <item>10:30</item>
-        <item>11:00</item>
-        <item>11:30</item>
-        <item>12:00</item>
-        <item>12:30</item>
-        <item>13:00</item>
-        <item>13:30</item>
-        <item>14:00</item>
-        <item>14:30</item>
-        <item>15:00</item>
-        <item>15:30</item>
-        <item>16:00</item>
-        <item>16:30</item>
-        <item>17:00</item>
-        <item>17:30</item>
-        <item>18:00</item>
-        <item>18:30</item>
-        <item>19:00</item>
-        <item>19:30</item>
-        <item>20:00</item>
-        <item>20:30</item>
-        <item>21:00</item>
-        <item>21:30</item>
-        <item>22:00</item>
-        <item>22:30</item>
-        <item>23:00</item>
-        <item>23:30</item>
-    </string-array>
+
     <string name="FACEBOOK_APP_ID" translatable="false">303423527243659</string>
     <string name="ACCOUNT_KIT_CLIENT_TOKEN" translatable="false">8bf79515cbe986f67a9c437d1bf83868</string>
     <string name="app_name">IzyParty</string>
@@ -222,25 +172,6 @@
     <string name="maps_api_key" translatable="false">AIzaSyD0-6T-OEouGIjTwnFU4m3SJmiusbiccmY</string>
     <string name="success_map">Map selection done</string>
 
-    <string-array name="foods">
-        <item>No Food Allergy</item>
-        <item>Gluten</item>
-        <item>Egg white</item>
-        <item>Peanut</item>
-        <item>Cow milk</item>
-        <item>Fabaceae (lentils, beans ...)</item>
-        <item>Walnut</item>
-        <item>Others</item>
-    </string-array>
-
-    <string-array name="pets">
-        <item>No Pet Allergy</item>
-        <item>Dog</item>
-        <item>Cat</item>
-        <item>Rabbit</item>
-        <item>Mouse</item>
-        <item>Others</item>
-    </string-array>
     <string name="gift_selected">Gift Selected:</string>
     <string name="descrpition_todo">Add TO-DOs to make your birthday planning easier</string>
     <string name="descrpition_gift">Add gifts to your events and let your guests choose from your selection!</string>
@@ -359,4 +290,75 @@
     <string name="allergy_childName">Your child\'s name...</string>
     <string name="bday_title">Birthday</string>
     <string name="ChildNameTitle">"Child's name:  "</string>
+    <string-array name="times">
+        <item>Please select a time slot</item>
+        <item>0:00</item>
+        <item>0:30</item>
+        <item>1:00</item>
+        <item>1:30</item>
+        <item>2:00</item>
+        <item>2:30</item>
+        <item>3:00</item>
+        <item>3:30</item>
+        <item>4:00</item>
+        <item>4:30</item>
+        <item>5:00</item>
+        <item>5:30</item>
+        <item>6:00</item>
+        <item>6:30</item>
+        <item>7:00</item>
+        <item>7:30</item>
+        <item>8:00</item>
+        <item>8:30</item>
+        <item>9:00</item>
+        <item>9:30</item>
+        <item>10:00</item>
+        <item>10:30</item>
+        <item>11:00</item>
+        <item>11:30</item>
+        <item>12:00</item>
+        <item>12:30</item>
+        <item>13:00</item>
+        <item>13:30</item>
+        <item>14:00</item>
+        <item>14:30</item>
+        <item>15:00</item>
+        <item>15:30</item>
+        <item>16:00</item>
+        <item>16:30</item>
+        <item>17:00</item>
+        <item>17:30</item>
+        <item>18:00</item>
+        <item>18:30</item>
+        <item>19:00</item>
+        <item>19:30</item>
+        <item>20:00</item>
+        <item>20:30</item>
+        <item>21:00</item>
+        <item>21:30</item>
+        <item>22:00</item>
+        <item>22:30</item>
+        <item>23:00</item>
+        <item>23:30</item>
+    </string-array>
+
+    <string-array name="foods">
+        <item>No Food Allergy</item>
+        <item>Gluten</item>
+        <item>Egg white</item>
+        <item>Peanut</item>
+        <item>Cow milk</item>
+        <item>Fabaceae (lentils, beans ...)</item>
+        <item>Walnut</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="pets">
+        <item>No Pet Allergy</item>
+        <item>Dog</item>
+        <item>Cat</item>
+        <item>Rabbit</item>
+        <item>Mouse</item>
+        <item>Others</item>
+    </string-array>
 </resources>
