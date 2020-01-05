@@ -5,14 +5,21 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.annotation.MainThread;
 import android.support.annotation.Nullable;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.iid.FirebaseInstanceId;
+import com.google.firebase.iid.InstanceIdResult;
 import com.izyparty.invitation.R;
 import com.izyparty.invitation.templates.BaseActivity;
+import com.izyparty.invitation.ui.home.HomeActivity;
 import com.izyparty.invitation.utils.network.Endpoints;
+import com.izyparty.invitation.utils.network.asynctask;
 import com.izyparty.invitation.utils.network.callback;
 import com.izyparty.invitation.utils.network.requestMaker;
 import com.facebook.accountkit.AccountKit;
@@ -20,6 +27,8 @@ import com.facebook.accountkit.AccountKitLoginResult;
 import com.facebook.accountkit.ui.AccountKitActivity;
 import com.facebook.accountkit.ui.AccountKitConfiguration;
 import com.facebook.accountkit.ui.LoginType;
+import com.pixplicity.easyprefs.library.Prefs;
+
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -76,14 +85,27 @@ public signupTasl asynctask;
     }
 
     public void continueSignup(String code) {
-        HashMap<String,Object> map = new HashMap<>();
+        final HashMap<String,Object> map = new HashMap<>();
         map.put("email",email.getText().toString());
         map.put("name",name.getText().toString());
         map.put("password",password.getText().toString());
         map.put("passwordConfirm",passwordConfirm.getText().toString());
         map.put("code",code);
-        if (asynctask!=null) {asynctask.cancel(true);asynctask=null;}
-        asynctask=new signupTasl(this,Endpoints.SIGNUP_URL,map);asynctask.execute();
+        //final HashMap<String, Object> map = new HashMap<>();
+        FirebaseInstanceId.getInstance().getInstanceId().addOnSuccessListener(RegisterActivity.this, new OnSuccessListener<InstanceIdResult>() {
+            @Override
+            public void onSuccess(InstanceIdResult instanceIdResult) {
+                String newToken = instanceIdResult.getToken();
+                map.put("token", newToken);
+                if (RegisterActivity.this.asynctask!=null) {
+                    asynctask.cancel(true);
+                    asynctask=null;
+                }
+                RegisterActivity.this.asynctask=new signupTasl(RegisterActivity.this,Endpoints.SIGNUP_URL,map);
+                asynctask.execute();
+            }
+        });
+
     }
 
 
@@ -95,7 +117,6 @@ public signupTasl asynctask;
         configurationBuilder.setDefaultCountryCode("FR");
         // ... perform additional configuration ...
         intent.putExtra(AccountKitActivity.ACCOUNT_KIT_ACTIVITY_CONFIGURATION, configurationBuilder.build());
-
         startActivityForResult(intent, APP_REQUEST_CODE);
     }
 
@@ -105,8 +126,21 @@ public signupTasl asynctask;
         try{
             Log.d("DEBUG JSON", "callback: "+jsonObject.toString());
             if (jsonObject.getBoolean("success")) {
-                Toast.makeText(this, getString(R.string.successful_signup), Toast.LENGTH_SHORT).show();
-                finish();
+                Prefs.putString("token", jsonObject.getString("token"));
+                Prefs.putString("number", jsonObject.get("number").toString());
+                /*
+                    as per client request , signup also logs in successfully
+                 */
+                //Toast.makeText(this, getString(R.string.successful_signup), Toast.LENGTH_SHORT).show();
+                Intent in = new Intent(this, HomeActivity.class);
+                getIntent().addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                //in.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(in);
+                try {
+                    finish();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
             }
             else {
                 //Toast.makeText(this, "Cannot sign you up", Toast.LENGTH_SHORT).show();
@@ -155,8 +189,8 @@ public signupTasl asynctask;
             Toast.makeText(this, getString(R.string.fill_passwords_coorecy), Toast.LENGTH_SHORT).show();
             return;
         }
-        if (checkPassword(password.getText().toString(),this)) { return; }
-        if (checkPassword(passwordConfirm.getText().toString(),this)) {return;}
+        if (!checkPassword(password.getText().toString(),this)) { return; }
+        if (!checkPassword(passwordConfirm.getText().toString(),this)) {return;}
         phoneLogin(null);
     }
     void cancel() {

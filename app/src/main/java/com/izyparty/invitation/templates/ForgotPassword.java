@@ -9,8 +9,14 @@ import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.iid.FirebaseInstanceId;
+import com.google.firebase.iid.InstanceIdResult;
 import com.izyparty.invitation.R;
 import com.izyparty.invitation.ui.auth.RegisterActivity;
+
+import com.izyparty.invitation.ui.home.HomeActivity;
 import com.izyparty.invitation.utils.network.Endpoints;
 import com.izyparty.invitation.utils.network.requestMaker;
 import com.facebook.accountkit.AccountKit;
@@ -18,6 +24,8 @@ import com.facebook.accountkit.AccountKitLoginResult;
 import com.facebook.accountkit.ui.AccountKitActivity;
 import com.facebook.accountkit.ui.AccountKitConfiguration;
 import com.facebook.accountkit.ui.LoginType;
+import com.pixplicity.easyprefs.library.Prefs;
+
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -28,10 +36,13 @@ public class ForgotPassword extends BaseActivity {
     public TextView password;
     public TextView COnfirmpassword;
     public resetTask asynctask;
-
+    public Boolean fromLogin = false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        try {
+            fromLogin = (getIntent().hasExtra("from"));
+        } catch (Throwable e) {e.printStackTrace();}
         setContentView(R.layout.activity_forgot_password);
         password = (TextView) findViewById(R.id.password);
         COnfirmpassword = (TextView) findViewById(R.id.passwordConfirm);
@@ -65,10 +76,27 @@ public class ForgotPassword extends BaseActivity {
 
     public void callback(JSONObject jsonObject) {
         try{
+            /*
+                as per client request , resetting password from login redirects to home screen and logs in automatically
+             */
             Log.d("DEBUG JSON", "callback: "+jsonObject.toString());
             if (jsonObject.getBoolean("success")) {
                 Toast.makeText(this, getString(R.string.successful_reset_password), Toast.LENGTH_SHORT).show();
-                finish();
+                if (fromLogin) {
+                    Prefs.putString("token", jsonObject.getString("token"));
+                    Prefs.putString("number", jsonObject.getString("number"));
+                    Intent in = new Intent(this, HomeActivity.class);
+                    getIntent().addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    //in.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    startActivity(in);
+                    try {
+                        finish();
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                } else {
+                    finish();
+                }
             }
             else {
                 //Toast.makeText(this, "Cannot sign you up", Toast.LENGTH_SHORT).show();
@@ -110,15 +138,36 @@ public class ForgotPassword extends BaseActivity {
     }
 
     public void continueSignup(String code) {
-        HashMap<String, Object> map = new HashMap<String, Object>();
+        final HashMap<String, Object> map = new HashMap<String, Object>();
         map.put("password", password.getText().toString());
         map.put("code", code);
-        if (asynctask != null) {
-            asynctask.cancel(true);
-            asynctask = null;
+        /*
+            login automatically if from login screen
+         */
+        if (fromLogin) {
+            FirebaseInstanceId.getInstance().getInstanceId().addOnSuccessListener(ForgotPassword.this, new OnSuccessListener<InstanceIdResult>() {
+                @Override
+                public void onSuccess(InstanceIdResult instanceIdResult) {
+                    String newToken = instanceIdResult.getToken();
+                    map.put("token", newToken);
+                    map.put("login","yes");
+                    if (ForgotPassword.this.asynctask != null) {
+                        asynctask.cancel(true);
+                        asynctask = null;
+                    }
+                    ForgotPassword.this.asynctask = new resetTask(ForgotPassword.this, Endpoints.RESET_PASSWORD, map);
+                    asynctask.execute();
+                }
+            });
         }
-        asynctask = new resetTask(ForgotPassword.this, Endpoints.RESET_PASSWORD, map);
-        asynctask.execute();
+        else {
+            if (asynctask != null) {
+                asynctask.cancel(true);
+                asynctask = null;
+            }
+            asynctask = new resetTask(ForgotPassword.this, Endpoints.RESET_PASSWORD, map);
+            asynctask.execute();
+        }
     }
 
 
@@ -127,6 +176,8 @@ public class ForgotPassword extends BaseActivity {
         AccountKitConfiguration.AccountKitConfigurationBuilder configurationBuilder =
                 new AccountKitConfiguration.AccountKitConfigurationBuilder(LoginType.PHONE, AccountKitActivity.ResponseType.CODE); // or .ResponseType.TOKEN
         // ... perform additional configuration ...
+        configurationBuilder.setSMSWhitelist(new String[] {"FR"});
+        configurationBuilder.setDefaultCountryCode("FR");
         intent.putExtra(AccountKitActivity.ACCOUNT_KIT_ACTIVITY_CONFIGURATION, configurationBuilder.build());
         startActivityForResult(intent, FACEBOOK_INTENT_CODE);
     }

@@ -15,8 +15,7 @@
     <string name="cancelled_contact_select">Sélection de contact annulée</string>
     <string name="fill_all_fields">Merci de bien vouloir remplir tous les champs</string>
     <string name="add_attendees">Ajouter des participants</string>
-    <string name="contact_permission_text">Une autorisation de contact est requise pour sélectionner les participants.
-    </string>
+    
     <string name="select_attendees_title">Sélectionner les participants</string>
     <string name="successfully_added_gift">Votre cadeau a été ajouté avec succés</string>
     <string name="successfully_added_todo">Votre tâche a été ajoutée avec succès</string>
@@ -31,38 +30,32 @@
     <string name="error_deleteing_event">Erreur lors de la suppression de l\'événement</string>
     <string name="event_updated">Votre événement a été mis à jour</string>
     <string name="coudlnt_update_event">Impossible de mettre à jour votre événement</string>
-    <string name="fill_all_fields_banner">S\'il vous plaît remplir tous les champs correctement</string>
+    
     <string name="update_contacts">Mettre à jour les contacts</string>
     <string name="error_loading_contacts">Erreur lors du chargement de vos contacts</string>
-    <string name="event_updated_to_attendees">Votre événement a été mis à jour pour vos participants</string>
-    <string name="sms_start_text">Hey! Je vous invite à mon anniversaire avec Izyparty, cliquez ici pour répondre.
-    </string>
+    
     <string name="add_phone_email">Indiquez le nom de l\'enfant invité et le numéro de téléphone du parent</string>
     <string name="add">Ajouter</string>
     <string name="cancel">Annuler</string>
-    <string name="please_custom_detail">S\'il vous plaît entrer les coordonnées personnalisées</string>
-    <string name="celular_or_email"> Veuillez entrer un numéro de cellulaire </string>
+    
     <string name="Error_loading_events">Erreur lors du chargement de vos événements</string>
     <string name="login_error_text">Erreur de connexion ...</string>
-    <string name="signup_html">
-        <![CDATA[En vous inscrivant, vous acceptez notre, <b><u>Termes et conditions</u></b>]]></string>
+    
     <string name="logging_in_text">Se connecter...</string>
     <string name="error_logging_in">Erreur de connexion ...</string>
     <string name="share_using">Partager l\'événement en utilisant ...</string>
     <string name="successfully_updated">Mise à jour réussie!</string>
-    <string name="couldnt_update_it">Impossible de le mettre à jour</string>
+    
     <string name="couldnt_update_choce_gift">Impossible de mettre à jour votre choix de cadeau</string>
     <string name="new_invite_notification">Nouvelle invitation pour</string>
-    <string name="rsvp_noti">RSVP vous a envoyé à une fête par</string>
-    <string name="new_response_noti">"nouvelle réponse pour le parti de "</string>
-    <string name="someones_noti_respond">" a répondu à votre invitation"</string>
+    
+    <string name="someones_noti_respond"> a répondu à votre invitation</string>
     <string name="add_gift">Ajouter un cadeau à la liste</string>
     <string name="error_loading_events">Erreur lors du chargement de vos événements</string>
     <string name="add_todo_titel">Ajouter une tâche</string>
     <string name="Signup_cancelled">Inscription annulée</string>
     <string name="successful_signup">Inscription réussie, veuillez vous connecter</string>
-    <string name="fill_alert_fields_signup">S\'il vous plaît remplir tous les champs correctement</string>
-    <string name="fill_passwords_coorecy">S\'il vous plaît remplir les mots de passe correctement</string>
+    
     <string name="error_rejecting_event">Erreur de rejet de l\'événement</string>
     <string name="error_loading_rsvp">Erreur lors du chargement de vos réponses.</string>
     <string name="has_invited_you">vous a envoyé(e) une invitation</string>
@@ -74,10 +67,7 @@
     <string name="add_new_birthday_party">Ajouter une nouvelle fête d\'anniversaire</string>
     <string name="join_me_to_my_birthday_party">vous invite à sa fête d’anniversaire</string>
     <string name="pleae_enter_name">Veuillez entrer le nom de l\'invité</string>
-    <string name="here_users_can_write_the_name_of_his_child_and_after_the_name_of_the_guest">Ici, les utilisateurs
-        peuvent écrire le nom de son enfant et après le nom de l\'invité.
-    </string>
-    <string name="allow_the_guest_to_see_the_responses">Autoriser l\'invité à voir les réponses des autres invités</string>
+    
     <string name="yes_no">NON/OUI</string>
     <string name="name_of_the_guest">Nom de l\'invité ...</string>
     <string name="add_custom_contacts">Ajouter des contacts personnalisés</string>
@@ -90,11 +80,11 @@
     <string name="delete_event">Supprimer l\'événement</string>
     <string name="gifts">Cadeaux</string>
     <string name="easyparty">Izyparty</string>
-    <string name="manage_invites">Créez et Gérez vos invitations</string>
+    
     <string name="respond_to_hosts">Répondre aux hôtes</string>
     <string name="manage_time">Organiser son temps</string>
     <string name="to_do_list">Liste de choses à faire</string>
-    <string name="never_forget_you_kids_wish">Créer une Liste de cadeaux</string>
+    
     <string name="party_theme">Thème de la fête</string>
     <string name="please_indicate_if_there_is_a_special_theme_for_the_party">Indiquez si il y a un thème spécial pour la fête</string>
     <string name="enter_theme_here">Entrez le thème ici ...</string>
@@ -106,25 +96,23 @@
         INDIQUEZ TOUTES LES INFORMATIONS CONCERNANT <b>L\’ANNIVERSAIRE</b> DE VOTRE ENFANT ET ENVOYEZ L\'INVITATION (CELA NE
         VOUS EMPÊCHE PAS DE DONNER UNE CARTE D\'INVITATION AMUSANTE AUX ENFANTS)
     </string>
-    <string name="street_addresse">Adresse de rue</string>
+    
     <string name="zip_code_and_city">Code postal et ville</string>
     <string name="city_name">Nom de la Ville</string>
     <string name="district">District</string>
     <string name="zip_code">Code postal</string>
-    <string name="add_here_all_the_infomation_n_required_such_as_ndrop_pin_code">Ajoutez ici toutes les informations requises tel que le code d’entrée de l’immeuble</string>
+    
     <string name="country">Pays</string>
     <string name="update">Mettre à jour</string>
     <string name="pool_party">Soirée piscine</string>
     <string name="invites">Invite</string>
     <string name="plan_share_invite">Planifiez, invitez, gérez</string>
-    <string name="email_address">Adresse électronique</string>
+    
     <string name="password">Mot de passe</string>
     <string name="login">S\'IDENTIFIER</string>
     <string name="or">OU</string>
     <string name="create_new_account">CRÉER UN NOUVEAU COMPTE</string>
-    <string name="by_using_the_app_you_agree_with_our_terms_and_conditions">En utilisant l\'application, vous acceptez
-        nos conditions générales.
-    </string>
+    
     <string name="sign_up">S\'inscrire</string>
     <string name="name">Prénom</string>
     <string name="confirm_password">Confirmez le mot de passe</string>
@@ -140,24 +128,16 @@
     </string>
     <string name="send">Envoyer</string>
     <string name="create">Créer</string>
-    <string name="please_enter_name">S\'il vous plaît entrer le nom …</string>
-    <string name="allergies_indicated">Allergies Indiquées</string>
+    
     <string name="allergies">Les allergies</string>
     <string name="select">Sélectionner</string>
     <string name="profile">Profil</string>
     <string name="contacts">Contacts</string>
-    <string name="select_text_lang">S\'il vous plaît sélectionnez votre langue</string>
+    
     <string name="descrpition_home">Organisez maintenant vos fêtes d\'anniversaire comme jamais auparavant</string>
     <string name="welcome">Bienvenue sur IzyParty</string>
-    <string name="termsandc">En utilisant l\'application, vous acceptez les termes et conditions</string>
-    <string name="add_todo_using_calendar">
-        Ajoutez l\'évènement à votre calendrier
-    </string>
-    <string name="no_calendar_app">Aucune application de calendrier n\'a été trouvée</string>
-
+    
     <!-- LEKU MAP TRANSALATIONS START -->
-    <string name="leku_title_activity_location_picker">Sélecteur de lieu</string>
-    <string name="leku_load_location_error">Quelque chose s\'est mal passé. Veuillez réessayer</string>
     <string name="leku_no_search_results">Il n\'y a pas de résultats pour votre recherche</string>
     <string name="leku_unknown_location">lieu inconnu</string>
     <string name="leku_voice_search_promp">Recherche vocale…</string>
@@ -165,19 +145,17 @@
     <string name="leku_toolbar_action_voice_title">Voix</string>
     <string name="leku_search_hint">Chercher</string>
     <!-- LEKU MAP TRANSALATIONS END -->
-    <string name="success_map">Sélection de la carte effectuée</string>
-    <string name="error_map_pick">Impossible de choisir l\'emplacement choisi</string>
-
+    
     <string name="gift_selected">Cadeau sélectionné:</string>
-    <string name="descrpition_todo"> Ajoutez des tâches à effectuer pour faciliter la planification de votre anniversaire </string>
+    
         <string name="descrpition_gift"> Ajoutez des cadeaux à vos événements et laissez vos invités choisir parmi votre sélection! </string>
     <string name="welcome1"> Complétez votre invitation! </string>
     <string name="welcome2"> Gérez toute votre organisation </string>
-    <string name="please_enter_your_allergy_precisely">S\'il vous plaît mettez d\'autres allergies ici ...</string>
+    
 
     <string name="title_activity_maps_select_prebuilt"> Carte </string>
         <string name="no_allergies"> Pas d\'Allergie </string>
-    <string name="logout"> Logout </string>
+    
 
     <string name="my_profile"> Mon profil </string>
         <string name="my_name"> Mon nom </string>
@@ -187,11 +165,9 @@
     <string name="change_password"> Changer le mot de passe </string>
         <string name="enter_existing_password"> Entrez le mot de passe existant </string>
         <string name="Enter_new_password"> Entrez un nouveau mot de passe </string>
-    <string name="error_updating_password">Erreur de mise à jour du mot de passe</string>
+    
     <string name="updated_password">Mot de passe mis à jour</string>
-    <string name="password_fields_empty">S\'il vous plaît remplir tous les champs</string>
-    <string name="password_wrong">Votre mot de passe entré est faux</string>
-    <string name="password_dont_match">Vos nouveaux mots de passe et de confirmation ne sont pas les mêmes</string>
+    
     <string name="logged_out_message">Votre session a expiré, veuillez vous reconnecter pour continuer</string>
     <string name="logged_out_title">La session a expiré</string>
     <string name="ok">D\'accord</string>
@@ -201,10 +177,10 @@
     <string name="notgoing">Vous avez refusé l’invitation, cliquer ici pour modifier votre réponse.</string>
 
     <string name="click_on_map_to_select_your_venue">Cliquez sur la carte pour sélectionner votre lieu</string>
-    <string name="click_on_the_map_preview_to_see_more">Veuillez cliquer n\\\'importe où sur la carte pour sélectionner
+    <string name="click_on_the_map_preview_to_see_more">Veuillez cliquer n\'importe où sur la carte pour sélectionner
         la salle
     </string>
-    <string name="no_point_seletced">Veuillez cliquer n\\\'importe où sur la carte pour sélectionner la salle</string>
+    <string name="no_point_seletced">Veuillez cliquer n\'importe où sur la carte pour sélectionner la salle</string>
 
 
     <string name="registeredUsers"> Participants inscrits à Izyparty </string>
@@ -216,20 +192,16 @@
     <string name="update_event_notification_text">Certains changements ont été effectués pour</string>
     <string name="new_gift_added_for">Nouveau choix de cadeau ajouté pour</string>
     <string name="new_gift_title">Nouveau choix de cadeau</string>
-    <string name="tap_here_to_select_gift_added">Appuyez ici pour sélectionner ce choix de cadeau avant qu\'il ne
-        disparaisse.Le choix de cadeau a été ajouté par
-    </string>
+    
     <string name="new1">Nouveau!</string>
     <string name="Error_loading_gifts">Erreur lors du chargement de vos cadeaux</string>
     <string name="todo_add_error">Veuillez entrer une tâche s’il vous plaît</string>
-    <string name="gift_add_error">S\'il vous plaît entrer le nom du cadeau correctement</string>
+    
     <string name="select_gift">Choisir un cadeau</string>
-    <string name="click_here_to_get_gift_selected_by">"Appuyez ici pour voir le cadeau sélectionné par "</string>
-    <string name="new_gift_selected_for">"Nouveau cadeau sélectionné pour "</string>
-    <string name="selected">"Sélectionné "</string>
-    <string name="add_contacts">Ajouter des Contacts</string>
-    <string name="phonebook">Ajouter du Répertoire</string>
-    <string name="custom_numbers">Entrer Un Participant Manuellement</string>
+    <string name="click_here_to_get_gift_selected_by">Appuyez ici pour voir le cadeau sélectionné par </string>
+    <string name="new_gift_selected_for">Nouveau cadeau sélectionné pour </string>
+    <string name="selected">Sélectionné </string>
+    
     <string name="add_attendee">Ajouter des participants</string>
     <string name="your_phone">Votre numéro de téléphone</string>
     <string name="successful_reset_password">Votre mot de passe a été réinitialisé</string>
@@ -247,8 +219,7 @@
     <string name="already_selected">Ce cadeau a été sélectionné par quelqu\'un d\'autre</string>
     <string name="your_gift"> Le cadeau que vous avez sélectionné </string>
          <string name="was_deleted"> a été supprimé par </string>
-         <string name="click_del"> Appuyez ici pour sélectionner un nouveau cadeau pour une fête de </string>
-         <string name="interntaional_warning"> Veuillez saisir votre numéro de téléphone complet au format international, y compris + signe </string>
+    
          <string name="please_select_time_slot"> Veuillez sélectionner un créneau horaire </string>
     <string name="time_warning">Veuillez entrer l\'heure de fin après l\'heure de début</string>
     <string name="mes_v_nements">Mes évènements</string>
@@ -259,24 +230,21 @@
     <string name="participants">Participants</string>
 
 
-    <string name="no_events"> Aucun événement, pour créer un clic sur le plus </string>
-        <string name="please_enter_the_name_of_your_child"> Veuillez saisir le nom de votre enfant </string>
+    
         <string name="validate_the_event"> Valider  </string>
         <string name="add_participants"> Ajouter des participants </string>
         <string name="add_participants_later"> Ajouter des participants plus tard </string>
-        <string name="gifts_title"> Liste de Cadeaux </string>
+    
         <string name="add_event_title"> Ajouter un nouvel événement  </string>
         <string name="choose_allergies"> Sélectionner une allergie  </string>
         <string name="todo_title"> Mes tâches </string>
         <string name="party_overview"> Vue d\'ensemble de la fête </string>
-        <string name="no_location"> Aucun emplacement de carte n\'a été sélectionné pour cette soirée. </string>
+    
         <string name="action"> Actions </string>
         <string name="going_title"> Accepté </string>
         <string name="Notgoing_title">Refusé</string>
         <string name="unknown_title">Non répondu</string>
-        <string name="Resend_notifi"> Relancer les personnes qui n’ont pas répondues </string>
-        <string name="error_notifying_guests"> Erreur de notification des invités </string>
-        <string name="NOTFI"> Réinviter les invités avec succès </string>
+    
     <string name="no_events_other">Aucun événement</string>
     <string name="events_option_title"> Gérer la fête </string>
     <string name="edit_party">Modifier les détails de la fête</string>
@@ -288,11 +256,7 @@
     <string name="present">Présent</string>
     <string name="Absent">Absent</string>
     <string name="number">Numéro</string>
-    <string name="allergy_childName">Le nom de votre enfant ...</string>
-    <string name="allergy_childName_error">Veuillez saisir le nom de votre enfant</string>
-    <string name="bday_title">Anniversaire</string>
-    <string name="ChildNameTitle">"Nom de l'enfant:   "</string>
-
+    
 
 
     <string-array name="foods">
@@ -365,4 +329,68 @@
         <item>23:00</item>
         <item>23:30</item>
     </string-array>
+
+
+    <string name="new_response_noti">nouvelle réponse pour la fête  de </string>
+    <string name="ChildNameTitle">prénom de l\'enfant:   </string>
+    <string name="phonebook">Accéder à vos contacts</string>
+    <string name="email_address">Adresse email</string>
+    <string name="add_contacts">Ajouter des participants</string>
+    <string name="descrpition_todo">Ajoutez des tâches à effectuer pour faciliter l\'organisation de votre fête d\'anniversaire</string>
+    <string name="add_here_all_the_infomation_n_required_such_as_ndrop_pin_code">Ajoutez ici toutes les informations utiles telles que le code d’entrée de l’immeuble,
+l\'étage, etc.</string>
+    <string name="add_todo_using_calendar">Ajoutez l\'évènement à votre agenda</string>
+    <string name="allergies_indicated">Allergies indiquées</string>
+    <string name="bday_title">Anniversaire</string>
+    <string name="tap_here_to_select_gift_added">Appuyez ici pour sélectionner ce  cadeau avant qu\'il ne
+        choisi par un autre invité. Le choix de cadeau a été ajouté par</string>
+    <string name="no_calendar_app">Aucun agenda n\'a été trouvée</string>
+    <string name="no_location">Aucun emplacement n\'a été sélectionné pour cet évènement.</string>
+    <string name="allow_the_guest_to_see_the_responses">Autoriser vos invités  à voir les réponses des autres convives</string>
+    <string name="sms_start_text">Bonjour, vous avez été invité à une fête d\'anniversaire, vous pouvez y répondre en téléchargeant gratuitement l\'application Izyparty, ici «lien vers l\'AppStore et google play». Pour plus d\'informations, visitez notre site Web à cette adresse https://Izyparty.com »</string>
+    <string name="click_del">Cliquez ici pour sélectionner un nouveau cadeau pour une fête de</string>
+    <string name="never_forget_you_kids_wish">Créer une liste de cadeaux</string>
+    <string name="manage_invites">Créez et gérez vos invitations</string>
+    <string name="logout">Déconnexion</string>
+    <string name="by_using_the_app_you_agree_with_our_terms_and_conditions">En utilisant l\'application, vous acceptez
+        nos conditions générales d\'utilisation.</string>
+    <string name="termsandc">En utilisant l\'application, vous acceptez les conditions générales d\'utilisation</string>
+    <string name="signup_html">En vous inscrivant, vous acceptez nos, <b><u>Conditions générales d\'utilisation</u></b></string>
+    <string name="custom_numbers">Entrer un participant manuellement</string>
+    <string name="error_notifying_guests">Erreur lors de l\'envoi de la notification aux invités</string>
+    <string name="error_updating_password">Erreur lors de la mise à jour du mot de passe</string>
+    <string name="leku_title_activity_location_picker">Geolocalisation</string>
+    <string name="here_users_can_write_the_name_of_his_child_and_after_the_name_of_the_guest">Ici, les utilisateurs
+        peuvent écrire l\'enfant etensuite  le nom du parent.</string>
+    <string name="error_map_pick">Impossible de choisir l\'emplacement selectionné</string>
+    <string name="password_wrong">Le  mot de passe saisie est érroné, veuillez réessayer.</string>
+    <string name="allergy_childName">Le prénom de votre enfant ...</string>
+    <string name="gifts_title">Liste de cadeaux</string>
+    <string name="couldnt_update_it">Mise à jour impossible!</string>
+    <string name="street_addresse">N° et Nom de la Rue</string>
+    <string name="NOTFI">Notification envoyée avec succès.</string>
+    <string name="leku_load_location_error">Quelque chose n\'a pas foncionné. Veuillez réessayer.</string>
+    <string name="Resend_notifi">Relancer les personnes qui n’ont pas répondu</string>
+    <string name="success_map">Sélection du plan effectuée</string>
+    <string name="contact_permission_text">Une autorisation d\'accès à vos contacts est requise pour sélectionner les participants.</string>
+    <string name="please_enter_name">Veuillez entrer le nom …</string>
+    <string name="gift_add_error">Veuillez entrer le nom du cadeau correctement</string>
+    <string name="please_custom_detail">Veuillez entrer les coordonnées du contact</string>
+    <string name="celular_or_email">Veuillez entrer un numéro de téléphone</string>
+    <string name="please_enter_your_allergy_precisely">Veuillez indiquez d\'autres précautions à prendre ...</string>
+    <string name="fill_passwords_coorecy">Veuillez remplir les mots de passe correctement</string>
+    <string name="fill_alert_fields_signup">Veuillez remplir tous les champs correctement</string>
+    <string name="fill_all_fields_banner">Veuillez remplir tous les champs correctement.</string>
+    <string name="password_fields_empty">Veuillez remplir tous les champs.</string>
+    <string name="please_enter_the_name_of_your_child">Veuillez saisir le prénom de votre enfant</string>
+    <string name="allergy_childName_error">Veuillez saisir le prénom de votre enfant</string>
+    <string name="interntaional_warning">Veuillez saisir votre numéro de téléphone complet au format international, y compris l\'indicatif pays +</string>
+    <string name="select_text_lang">Veuillez sélectionnez votre langue</string>
+    <string name="password_dont_match">Vos nouveaux mots de passe ne correspondent pas</string>
+    <string name="event_updated_to_attendees">Votre événement a été mis à jour pour vos invités</string>
+    <string name="rsvp_noti">Vous avez reçu une invitation.</string>
+    <string name="no_events">Vous n\'avez aucun événement planifié  pour le moment, pour créer un clicquez sur le plus</string>
+
+
+
 </resources>
