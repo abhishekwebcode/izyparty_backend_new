@@ -75,7 +75,7 @@
     <string name="events">Mes Évènements</string>
     <string name="invitations">Mes Invitations reçues</string>
     <string name="change_event_details">Changer les détails de l\'événement</string>
-    <string name="view_responses">Voir les réponses des invités</string>
+    <string name="view_responses">Voir le détail des réponses</string>
     <string name="change_attendees">Ajouter des\n participants</string>
     <string name="delete_event">Supprimer l\'événement</string>
     <string name="gifts">Cadeaux</string>
@@ -186,7 +186,7 @@
     <string name="registeredUsers"> Participants inscrits à Izyparty </string>
     <string name="nonAppPhoneNumbers"> Participants non inscrits à Izyparty </string>
     <string name="error_loading_attendees">Erreur lors du chargement des participants à votre fête</string>
-    <string name="view_attendees">Voir les participants</string>
+    <string name="view_attendees">Voir la liste des invités</string>
     <string name="party">fête</string>
     <string name="change_was_made_by">Appuyez ici pour voir les modifications apportées par</string>
     <string name="update_event_notification_text">Certains changements ont été effectués pour</string>
@@ -254,7 +254,7 @@
         <string name="PASSWORD_NOUPPER"> Votre mot de passe doit comporter au moins 1 lettre majuscule </string>
         <string name="PASSWORD_SPECIALCHAR"> Votre mot de passe doit comporter au moins 1 caractère spécial </string>
     <string name="present">Présent</string>
-    <string name="Absent">Absent</string>
+    <string name="Absent">Pas présent</string>
     <string name="number">Numéro</string>
     
 
@@ -280,30 +280,7 @@
     </string-array>
     <string-array name="times">
         <item>Veuillez sélectionner un créneau horaire</item>
-        <item>0:00</item>
-        <item>0:30</item>
-        <item>1:00</item>
-        <item>1:30</item>
-        <item>2:00</item>
-        <item>2:30</item>
-        <item>3:00</item>
-        <item>3:30</item>
-        <item>4:00</item>
-        <item>4:30</item>
-        <item>5:00</item>
-        <item>5:30</item>
-        <item>6:00</item>
-        <item>6:30</item>
-        <item>7:00</item>
-        <item>7:30</item>
-        <item>8:00</item>
-        <item>8:30</item>
-        <item>9:00</item>
-        <item>9:30</item>
-        <item>10:00</item>
-        <item>10:30</item>
-        <item>11:00</item>
-        <item>11:30</item>
+
         <item>12:00</item>
         <item>12:30</item>
         <item>13:00</item>
@@ -328,6 +305,30 @@
         <item>22:30</item>
         <item>23:00</item>
         <item>23:30</item>
+        <item>0:00</item>
+        <item>0:30</item>
+        <item>1:00</item>
+        <item>1:30</item>
+        <item>2:00</item>
+        <item>2:30</item>
+        <item>3:00</item>
+        <item>3:30</item>
+        <item>4:00</item>
+        <item>4:30</item>
+        <item>5:00</item>
+        <item>5:30</item>
+        <item>6:00</item>
+        <item>6:30</item>
+        <item>7:00</item>
+        <item>7:30</item>
+        <item>8:00</item>
+        <item>8:30</item>
+        <item>9:00</item>
+        <item>9:30</item>
+        <item>10:00</item>
+        <item>10:30</item>
+        <item>11:00</item>
+        <item>11:30</item>
     </string-array>
 
 

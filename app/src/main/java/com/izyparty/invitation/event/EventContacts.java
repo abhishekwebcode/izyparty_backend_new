@@ -206,7 +206,7 @@ public class EventContacts extends BaseActivity {
                 }
                 adapter.items.add(new NumberItem(newCOntactName, newCOntactString, newCOntactString));
                 adapter.notifyDataSetChanged();
-                EventContacts.this.findViewById(R.id.add_attendee).setVisibility(GONE);
+                //EventContacts.this.findViewById(R.id.add_attendee).setVisibility(GONE);
                 dialog.dismiss();
             }
         });
@@ -329,6 +329,7 @@ public class EventContacts extends BaseActivity {
     public void showSubmit() {
         String text;
         if (adapter.items.size()==0) {
+
             if (fromEdit) {
                 text="";
                 create.setVisibility(View.GONE);

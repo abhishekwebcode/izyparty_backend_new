@@ -158,13 +158,13 @@ public signupTasl asynctask;
         name=findViewById(R.id.name);
         password=findViewById(R.id.password);
         passwordConfirm=findViewById(R.id.passwordConfirm);
-        findViewById(R.id.CancelButton).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.signUpButton).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 cancel();
             }
         });
-        findViewById(R.id.signUpButton).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.CancelButton).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 signup();

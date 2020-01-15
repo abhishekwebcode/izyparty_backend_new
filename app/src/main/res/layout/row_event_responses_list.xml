@@ -31,6 +31,7 @@
                 android:textAlignment="center"
                 android:textColor="@color/barBlue"
                 android:textSize="@dimen/text_title_regular"
+                android:paddingLeft="40dp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toStartOf="@+id/intent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -91,6 +92,7 @@
                     android:layout_gravity="center"
                     android:layout_margin="5dp"
                     android:gravity="center"
+                    android:id="@+id/kkiikk"
                     android:orientation="horizontal"
                     android:weightSum="2">
 

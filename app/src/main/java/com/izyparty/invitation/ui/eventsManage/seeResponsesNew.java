@@ -212,25 +212,49 @@ class CustomListResponse extends ArrayAdapter<RESPONSE> {
         ((ImageView)rowView.findViewById(R.id.intent)).setImageDrawable(context.getResources().getDrawable(imageID));
         int V = View.VISIBLE;
         if (context.isGuest) return rowView;
-        if (item.isAllergy) {
-            rowView.findViewById(R.id.divider_1).setVisibility(V);
-            rowView.findViewById(R.id.divider_2).setVisibility(V);
-            rowView.findViewById(R.id.allergies).setVisibility(V);
-            Log.d(TAG, "getView: DEBUG ALLERGY + "+ String.valueOf(item.allergy2));
-            Log.d(TAG, "getView: DEBUG ALLERGY + "+ String.valueOf(item.allergy2.equals("Autres")));
-            if ("Others".equals(item.allergy1) || "Autres".equals(item.allergy1)) {
-                rowView.findViewById(R.id.allergies3).setVisibility(V);
-                ((TextView)rowView.findViewById(R.id.allergies3)).setText(item.allergy3);
-            } else {
-                rowView.findViewById(R.id.allergies1).setVisibility(V);
-                ((TextView)rowView.findViewById(R.id.allergies1)).setText(item.allergy1);
+        if (!item.intention) {
+            rowView.findViewById(R.id.kkiikk).setVisibility(View.GONE);
+            int G = View.GONE;
+            rowView.findViewById(R.id.divider_1).setVisibility(G);
+            rowView.findViewById(R.id.divider_2).setVisibility(G);
+            rowView.findViewById(R.id.allergies).setVisibility(G);
+            return rowView;
+        }
+
+        Boolean anyAllergy = false;
+        if (item.isAllergy && item.intention) {
+            if ("Pas d\\'allergie alimentaire".equals(item.allergy1) && "Pas d\\'allergies aux animaux".equals(item.allergy1) && "".equals(item.allergy3)) {
+                anyAllergy=true;
+                rowView.findViewById(R.id.divider_1).setVisibility(V);
+                ((TextView)rowView.findViewById(R.id.allergies)).setText(context.getString(R.string.no_allergies));
+                rowView.findViewById(R.id.allergies).setVisibility(V);
             }
-            if ("Others".equals(item.allergy2) || "Autres".equals(item.allergy2)) {
-                rowView.findViewById(R.id.allergies3).setVisibility(V);
-                ((TextView)rowView.findViewById(R.id.allergies3)).setText(item.allergy3);
-            } else {
-                rowView.findViewById(R.id.allergies2).setVisibility(V);
-                ((TextView)rowView.findViewById(R.id.allergies2)).setText(item.allergy2);
+            if ("No Food Allergy".equals(item.allergy1) && "No Pet Allergy".equals(item.allergy2) && "".equals(item.allergy3)) {
+                rowView.findViewById(R.id.divider_1).setVisibility(V);
+                anyAllergy=true;
+                ((TextView)rowView.findViewById(R.id.allergies)).setText(context.getString(R.string.no_allergies));
+                rowView.findViewById(R.id.allergies).setVisibility(V);
+            }
+            if (!anyAllergy) {
+                rowView.findViewById(R.id.divider_1).setVisibility(V);
+                rowView.findViewById(R.id.divider_2).setVisibility(V);
+                rowView.findViewById(R.id.allergies).setVisibility(V);
+                Log.d(TAG, "getView: DEBUG ALLERGY + " + String.valueOf(item.allergy2));
+                Log.d(TAG, "getView: DEBUG ALLERGY + " + String.valueOf(item.allergy2.equals("Autres")));
+                if ("Others".equals(item.allergy1) || "Autres".equals(item.allergy1)) {
+                    rowView.findViewById(R.id.allergies3).setVisibility(V);
+                    ((TextView) rowView.findViewById(R.id.allergies3)).setText(item.allergy3);
+                } else {
+                    rowView.findViewById(R.id.allergies1).setVisibility(V);
+                    ((TextView) rowView.findViewById(R.id.allergies1)).setText(item.allergy1);
+                }
+                if ("Others".equals(item.allergy2) || "Autres".equals(item.allergy2)) {
+                    rowView.findViewById(R.id.allergies3).setVisibility(V);
+                    ((TextView) rowView.findViewById(R.id.allergies3)).setText(item.allergy3);
+                } else {
+                    rowView.findViewById(R.id.allergies2).setVisibility(V);
+                    ((TextView) rowView.findViewById(R.id.allergies2)).setText(item.allergy2);
+                }
             }
         }
         else {

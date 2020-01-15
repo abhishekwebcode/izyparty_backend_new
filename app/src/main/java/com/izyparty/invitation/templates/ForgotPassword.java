@@ -46,7 +46,7 @@ public class ForgotPassword extends BaseActivity {
         setContentView(R.layout.activity_forgot_password);
         password = (TextView) findViewById(R.id.password);
         COnfirmpassword = (TextView) findViewById(R.id.passwordConfirm);
-        findViewById(R.id.signUpButton).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.CancelButton).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (password.getText().toString().length() == 0 || COnfirmpassword.getText().toString().length() == 0) {
@@ -66,7 +66,7 @@ public class ForgotPassword extends BaseActivity {
                 phoneLogin(v);
             }
         });
-        findViewById(R.id.CancelButton).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.signUpButton).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 finish();
